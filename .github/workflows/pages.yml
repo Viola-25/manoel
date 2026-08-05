@@ -43,22 +43,6 @@ jobs:
           cp index.html _site/
           cp -r data/*.json _site/data/
 
-      - name: Habilitar GitHub Pages (se ainda nao estiver)
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          code=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
-            -H "Authorization: Bearer $GH_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/${{ github.repository }}/pages \
-            -d '{"build_type":"workflow"}')
-          echo "POST /pages -> HTTP $code"
-          if [ "$code" != "200" ] && [ "$code" != "201" ] && [ "$code" != "409" ]; then
-            echo "Nao foi possivel habilitar Pages via API (talvez falta permissao)."
-            echo "Habilite manualmente em Settings > Pages > Source > GitHub Actions."
-            exit 1
-          fi
-
       - name: Configurar Pages
         uses: actions/configure-pages@v5
 
