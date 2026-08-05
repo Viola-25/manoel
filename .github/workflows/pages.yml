@@ -30,20 +30,20 @@ jobs:
           python-version: "3.12"
 
       - name: Instalar dependencias
-        run: pip install pymupdf
+        run: pip install -r requirements.txt
 
       - name: Extrair exames dos PDFs (se houver)
         run: |
-          if ls examesbruto/*.pdf >/dev/null 2>&1; then
+          if ls raw/*.pdf >/dev/null 2>&1; then
             python scripts/extract_exams.py
           else
             echo "Nenhum PDF nesta versao; mantendo data/ ja commitado."
           fi
 
-      - name: Preparar site (somente index + dados)
+      - name: Preparar site (public/ + dados)
         run: |
           mkdir -p _site/data
-          cp index.html _site/
+          cp -r public/* _site/
           cp -r data/*.json _site/data/
 
       - name: Configurar Pages

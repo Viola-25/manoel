@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Boletim diário de exames laboratoriais e de imagem de Manoel Rodrigues de Oliveira.">
+<title>Boletim de saúde — Manoel Rodrigues de Oliveira</title>
+
+<script>
+  tailwind = { config: {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', '"Segoe UI"', 'Roboto', 'sans-serif']
+        },
+        boxShadow: {
+          card: '0 1px 2px 0 rgb(15 23 42 / .05), 0 1px 3px 0 rgb(15 23 42 / .06)'
+        }
+      }
+    }
+  }};
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  summary::-webkit-details-marker { display: none; }
+  details > summary { list-style: none; }
+  details[open] > summary .chev { transform: rotate(90deg); }
+  .chev { transition: transform .15s ease; }
+  .timeline { position: relative; margin-left: 4px; padding-left: 26px; }
+  .timeline::before { content: ""; position: absolute; left: 6px; top: 8px; bottom: 8px; width: 2px; background: #e2e8f0; }
+  .timeline li { position: relative; padding-bottom: 1.25rem; }
+  .timeline li:last-child { padding-bottom: 0; }
+  .timeline li::before {
+    content: ""; position: absolute; left: -25px; top: 5px;
+    width: 11px; height: 11px; border-radius: 9999px;
+    background: #2563eb; box-shadow: 0 0 0 3px #dbeafe;
+  }
+  .points { max-height: 240px; overflow: auto; }
+  .points::-webkit-scrollbar { width: 6px; }
+  .points::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+
+<body class="bg-slate-100 text-slate-800 font-sans antialiased">
+<a href="#principal"
+   class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded-lg focus:bg-blue-700 focus:px-4 focus:py-2 focus:text-white focus:shadow-lg">
+  Pular para o conteúdo principal
+</a>
+
+<header class="bg-gradient-to-br from-slate-900 via-blue-900 to-blue-700 text-white shadow-lg">
+  <div class="mx-auto max-w-6xl px-4 py-6 sm:px-6">
+    <div class="flex flex-wrap items-center justify-between gap-4">
+      <div class="min-w-0">
+        <p class="text-xs font-semibold uppercase tracking-widest text-blue-300">Boletim diário de saúde</p>
+        <h1 class="mt-1 text-2xl font-extrabold tracking-tight sm:text-3xl">Manoel Rodrigues de Oliveira</h1>
+        <p class="mt-1 text-sm text-blue-100">
+          Nasc. 14/10/1940
+          <span class="mx-1 text-blue-300/70" aria-hidden="true">·</span>
+          <span id="atualizado">Dados atualizados: —</span>
+        </p>
+      </div>
+      <div id="statstrip" class="flex flex-wrap gap-2" aria-label="Resumo dos dados carregados"></div>
+    </div>
+  </div>
+</header>
+
+<main id="principal" class="mx-auto max-w-6xl px-4 sm:px-6">
+
+  <!-- Contexto clínico -->
+  <section aria-labelledby="tit-contexto" class="mt-6 rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
+    <h2 id="tit-contexto" class="text-sm font-bold uppercase tracking-wider text-blue-900">Contexto clínico</h2>
+    <div id="ctx" class="mt-2 text-sm leading-relaxed text-slate-600"></div>
+  </section>
+
+  <!-- Barra de busca e filtros -->
+  <section aria-label="Busca e filtros" class="sticky top-0 z-30 -mx-4 bg-slate-100/90 px-4 py-3 backdrop-blur sm:mx-0 sm:px-0">
+    <div class="flex flex-col gap-3 lg:flex-row lg:items-center">
+      <div class="relative flex-1">
+        <svg class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input id="busca" type="search" autocomplete="off" placeholder="Buscar exame, parâmetro ou palavra-chave…"
+               aria-label="Buscar exames"
+               class="w-full rounded-xl border border-slate-300 bg-white py-2.5 pl-10 pr-4 text-sm text-slate-800 shadow-sm placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30">
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:flex lg:items-center">
+        <div class="lg:w-40">
+          <label for="f-setor" class="sr-only">Setor</label>
+          <select id="f-setor" class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-700 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30">
+            <option value="">Todos os setores</option>
+            <option value="Pronto socorro">Pronto socorro</option>
+            <option value="Internado">Internado</option>
+            <option value="Imagem">Imagem</option>
+          </select>
+        </div>
+        <div class="lg:w-44">
+          <label for="f-status" class="sr-only">Status do resultado</label>
+          <select id="f-status" class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-700 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30">
+            <option value="">Todos os status</option>
+            <option value="alterado">Alterado</option>
+            <option value="normal">Normal</option>
+            <option value="sem-ref">Sem referência</option>
+          </select>
+        </div>
+        <div class="lg:w-44">
+          <label for="f-dia" class="sr-only">Dia</label>
+          <select id="f-dia" class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-700 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30">
+            <option value="">Todos os dias</option>
+          </select>
+        </div>
+        <button id="btn-limpar" type="button" class="hidden items-center justify-center gap-1 rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm font-medium text-slate-600 shadow-sm hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-500/30">
+          <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+          Limpar
+        </button>
+      </div>
+    </div>
+    <p id="contagem" class="mt-2 text-xs font-medium text-slate-500" aria-live="polite"></p>
+  </section>
+
+  <!-- Exames-chave -->
+  <section aria-labelledby="tit-chave" class="mt-4">
+    <div class="mb-3 flex items-baseline justify-between gap-3">
+      <h2 id="tit-chave" class="text-lg font-bold text-slate-900">Exames-chave</h2>
+      <p class="text-xs text-slate-500">Última leitura disponível por exame</p>
+    </div>
+    <div id="chave-grid" class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+  </section>
+
+  <!-- Cronologia -->
+  <section aria-labelledby="tit-cronologia" class="mt-10">
+    <h2 id="tit-cronologia" class="text-lg font-bold text-slate-900">Cronologia da internação</h2>
+    <div class="mt-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
+      <ol class="timeline" id="linha"></ol>
+    </div>
+  </section>
+
+  <!-- Todos os exames -->
+  <section aria-labelledby="tit-dias" class="mt-10">
+    <div class="mb-3 flex items-baseline justify-between gap-3">
+      <h2 id="tit-dias" class="text-lg font-bold text-slate-900">Todos os exames</h2>
+      <p class="text-xs text-slate-500">Organizado por dia de boletim</p>
+    </div>
+    <div id="dia-list" class="space-y-8"></div>
+  </section>
+
+</main>
+
+<footer class="mx-auto max-w-6xl px-4 pb-12 pt-8 sm:px-6">
+  <p class="text-xs leading-relaxed text-slate-500">
+    Fonte: boletins de exames (laboratório e imagem). Para atualizar, adicione o PDF do dia em
+    <code class="rounded bg-slate-200 px-1 py-0.5 font-mono text-[11px] text-slate-700">raw/</code>
+    e rode
+    <code class="rounded bg-slate-200 px-1 py-0.5 font-mono text-[11px] text-slate-700">python scripts/extract_exams.py</code>.
+  </p>
+</footer>
+
+<noscript>
+  <div class="mx-auto max-w-6xl px-4 py-8">
+    <p class="rounded-xl bg-amber-50 p-4 text-sm text-amber-800 ring-1 ring-amber-200">
+      Este site precisa de JavaScript para carregar os dados dos exames.
+    </p>
+  </div>
+</noscript>
+
+<script>
+"use strict";
+
+var CLINICO = {
+  context: "Doença renal crônica dialítica e síndrome mielodisplásica. Durante a internação recebeu vários antibióticos (incluindo vancomicina e esquema para bactérias resistentes a carbapenêmicos). O quadro não evoluiu bem: seguiu instável, evoluiu com sangramento e foi submetido a esplenectomia em 04/08. Os exames abaixo são dos boletins laboratoriais e de imagem.",
+  events: [
+    { date: "04/08/2026", text: "Episódio de sangramento" },
+    { date: "04/08/2026", text: "Esplenectomia" }
+  ]
+};
+
+var KEYS = [
+  { label: "Hemoglobina", group: /^HEMOGRAMA/, series: "Hemoglobina" },
+  { label: "Leucócitos", group: /^HEMOGRAMA/, series: "Leucócitos" },
+  { label: "Plaquetas", group: /^HEMOGRAMA/, series: "Plaquetas" },
+  { label: "PCR", group: /C-REATIVA/, series: "", unit: "mg/dL", lo: 1.0, hi: 5.0,
+    autoConvert: { threshold: 50, factor: 0.1, dec: 1 },
+    note: "escala interpretativa: 1–5 mg/dL (10–50 mg/L) sugere infecção viral/bacteriana" },
+  { label: "Ureia", group: /^UREIA/, series: "" },
+  { label: "Creatinina", group: /^CREATININA/, series: "Creatinina" },
+  { label: "pH", group: /GASOMETRIA ARTERIAL/, series: "" },
+  { label: "pCO₂", group: /GASOMETRIA ARTERIAL/, series: "pCO2 arterial" },
+  { label: "HCO₃", group: /GASOMETRIA ARTERIAL/, series: "HCO3 arterial" },
+  { label: "BE", group: /GASOMETRIA ARTERIAL/, series: "BE arterial" },
+  { label: "pO₂", group: /GASOMETRIA ARTERIAL/, series: "pO2 arterial" }
+];
+
+var days = [];
+var filters = { q: "", setor: "", status: "", dia: "" };
+
+function esc(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+  });
+}
+
+function parseNum(s) {
+  if (s == null) return null;
+  s = String(s).trim().replace("%", "");
+  if (!s || s === "[*]") return null;
+  var neg = false;
+  if (s[0] === "-") { neg = true; s = s.slice(1); }
+  else if (s[0] === "+") { s = s.slice(1); }
+  if (s[0] === "," || s[0] === ".") s = "0" + s;
+  s = s.replace(/\.(?=\d{3}(?:\.|$))/g, "").replace(",", ".");
+  var v = parseFloat(s);
+  return isNaN(v) ? null : (neg ? -v : v);
+}
+
+function parseRef(r) {
+  if (!r) return null;
+  var m = r.match(/([+-]?\d[\d.,]*)\s*(?:a|e)\s*([+-]?\d[\d.,]*)/);
+  if (m) return [parseNum(m[1]), parseNum(m[2])];
+  m = r.match(/At[eé]\s+(\d[\d.,]*)/);
+  if (m) return [null, parseNum(m[1])];
+  m = r.match(/(?:Superior a|Acima de)\s*(\d[\d.,]*)/);
+  if (m) return [parseNum(m[1]), null];
+  return null;
+}
+
+function unitOf(ref, fallback) {
+  if (!ref) return fallback || "";
+  var s = ref
+    .replace(/([+-]?\d[\d.,]*)\s*(?:a|e)\s*([+-]?\d[\d.,]*)/g, " ")
+    .replace(/At[eé]\s+\d[\d.,]*/g, " ")
+    .replace(/(?:Superior a|Acima de)\s*\d[\d.,]*/g, " ")
+    .replace(/Ver resultado tradicional.*/g, " ")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+  if (!s || s.indexOf(" ") >= 0) return fallback || "";
+  return s;
+}
+
+function fmtDT(dt) {
+  if (!dt) return "";
+  var m = String(dt).match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
+  if (!m) return dt;
+  return m[3] + "/" + m[2] + " " + m[4] + ":" + m[5];
+}
+
+function fmtDia(d) {
+  var m = String(d).match(/^(\d{2})\/(\d{2})\/(\d{4})/);
+  return m ? m[1] + "/" + m[2] : d;
+}
+
+function dayKey(d) {
+  var m = String(d).match(/^(\d{2})\/(\d{2})\/(\d{4})/);
+  return m ? m[3] + "-" + m[2] + "-" + m[1] : null;
+}
+
+function isoDay(dt) {
+  var m = String(dt).match(/^(\d{4}-\d{2}-\d{2})/);
+  return m ? m[1] : null;
+}
+
+function badgeClass(v, ref) {
+  if (v == null || !ref) return "";
+  var lo = ref[0], hi = ref[1];
+  if (lo != null && v < lo) return "low";
+  if (hi != null && v > hi) return "high";
+  return "ok";
+}
+
+function badgeHtml(cls, label) {
+  var map = {
+    high: ["bg-rose-50 text-rose-700 ring-rose-200", "Alto"],
+    low:  ["bg-sky-50 text-sky-700 ring-sky-200", "Baixo"],
+    ok:   ["bg-emerald-50 text-emerald-700 ring-emerald-200", "Normal"],
+    neut: ["bg-slate-100 text-slate-500 ring-slate-200", "Sem referência"]
+  };
+  if (!map[cls]) return "";
+  var lbl = label || map[cls][1];
+  return '<span class="inline-flex shrink-0 items-center rounded-full px-2 py-0.5 text-[11px] font-semibold leading-4 ring-1 ring-inset ' +
+    map[cls][0] + '">' + esc(lbl) + "</span>";
+}
+
+function setorChip(g) {
+  if (g.kind === "img") {
+    return '<span class="inline-flex shrink-0 items-center rounded-full bg-violet-50 px-2 py-0.5 text-[11px] font-semibold text-violet-700 ring-1 ring-inset ring-violet-200">Imagem</span>';
+  }
+  if (g.setor === "Pronto socorro") {
+    return '<span class="inline-flex shrink-0 items-center rounded-full bg-orange-50 px-2 py-0.5 text-[11px] font-semibold text-orange-700 ring-1 ring-inset ring-orange-200">Pronto socorro</span>';
+  }
+  return '<span class="inline-flex shrink-0 items-center rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-semibold text-emerald-700 ring-1 ring-inset ring-emerald-200">Internado</span>';
+}
+
+function findSeries(group, name) {
+  if (!group || !group.evolution || !group.evolution.series) return null;
+  for (var i = 0; i < group.evolution.series.length; i++) {
+    var s = group.evolution.series[i];
+    if (name === "" ? !s.name : s.name === name) return s;
+  }
+  return null;
+}
+
+function sortPts(pts) {
+  return pts.slice().sort(function (a, b) {
+    return a.datetime < b.datetime ? -1 : (a.datetime > b.datetime ? 1 : 0);
+  });
+}
+
+function latestForKey(daysArr, key) {
+  var best = null;
+  for (var i = 0; i < daysArr.length; i++) {
+    for (var j = 0; j < daysArr[i].groups.length; j++) {
+      var g = daysArr[i].groups[j];
+      if (g.kind !== "lab" || !key.group.test(g.title)) continue;
+      var s = findSeries(g, key.series);
+      if (!s || !s.points || !s.points.length) continue;
+      var pts = sortPts(s.points);
+      var last = pts[pts.length - 1];
+      if (!best || last.datetime > best.last.datetime) {
+        best = {
+          grp: g, s: s, points: pts, last: last,
+          prev: pts.length > 1 ? pts[pts.length - 2] : null,
+          ref: parseRef(s.reference), unit: unitOf(s.reference, key.unit)
+        };
+      }
+    }
+  }
+  return best;
+}
+
+function dayValueForDate(day, key, dk) {
+  var best = null;
+  for (var j = 0; j < day.groups.length; j++) {
+    var g = day.groups[j];
+    if (g.kind !== "lab" || !key.group.test(g.title)) continue;
+    var s = findSeries(g, key.series);
+    if (!s || !s.points || !s.points.length) continue;
+    var pts = s.points.filter(function (p) { return String(p.datetime).indexOf(dk) === 0; });
+    if (!pts.length) continue;
+    var last = sortPts(pts)[pts.length - 1];
+    if (!best || last.datetime > best.point.datetime) {
+      best = { s: s, point: last, ref: parseRef(s.reference), unit: unitOf(s.reference, key.unit) };
+    }
+  }
+  return best;
+}
+
+function fileDate(day) {
+  var best = null;
+  day.groups.forEach(function (g) {
+    if (!g.data) return;
+    var k = String(g.data).replace(/(\d{2})\/(\d{2})\/(\d{4})/, "$3$2$1");
+    if (!best || k > best.k) best = { k: k, d: g.data };
+  });
+  if (best) return best.d;
+  var m = (day.source || "").match(/(\d{4}-\d{2}-\d{2})_(\d{4}-\d{2}-\d{2})/);
+  return m ? m[2].split("-").reverse().join("/") : null;
+}
+
+function sparkline(points, ref, w, h) {
+  var vals = [];
+  for (var i = 0; i < points.length; i++) if (points[i].num != null) vals.push(points[i].num);
+  vals = vals.slice(-8);
+  if (vals.length < 2) return "";
+  var min = Math.min.apply(null, vals), max = Math.max.apply(null, vals);
+  if (ref) {
+    if (ref[0] != null) min = Math.min(min, ref[0]);
+    if (ref[1] != null) max = Math.max(max, ref[1]);
+  }
+  var span = (max - min) || 1;
+  var X = function (i) { return i * (w - 2) / (vals.length - 1) + 1; };
+  var Y = function (v) { return h - 2 - (v - min) / span * (h - 4); };
+  var pts = [];
+  for (var k = 0; k < vals.length; k++) pts.push(X(k).toFixed(1) + "," + Y(vals[k]).toFixed(1));
+  var lines = "";
+  if (ref) {
+    if (ref[0] != null) lines += '<line x1="0" y1="' + Y(ref[0]) + '" x2="' + w + '" y2="' + Y(ref[0]) + '" stroke="#7dd3fc" stroke-width="1" stroke-dasharray="3 3"/>';
+    if (ref[1] != null) lines += '<line x1="0" y1="' + Y(ref[1]) + '" x2="' + w + '" y2="' + Y(ref[1]) + '" stroke="#fda4af" stroke-width="1" stroke-dasharray="3 3"/>';
+  }
+  var lastVal = vals[vals.length - 1];
+  var dotCol = (ref && ref[1] != null && lastVal > ref[1]) ? "#e11d48"
+             : (ref && ref[0] != null && lastVal < ref[0]) ? "#0284c7" : "#2563eb";
+  return '<svg width="' + w + '" height="' + h + '" viewBox="0 0 ' + w + " " + h + '" role="img" aria-label="Evolução do valor" style="display:block;width:100%;height:' + h + 'px">' + lines +
+    '<polyline points="' + pts.join(" ") + '" fill="none" stroke="#2563eb" stroke-width="1.6"/>' +
+    '<circle cx="' + X(vals.length - 1).toFixed(1) + '" cy="' + Y(lastVal).toFixed(1) + '" r="2.5" fill="' + dotCol + '"/></svg>';
+}
+
+function deltaHtml(last, prev) {
+  if (last == null || prev == null) return "";
+  var d = last - prev;
+  if (d === 0) return '<p class="mt-1 text-xs text-slate-500">Sem variação em relação ao anterior</p>';
+  var arrow = d > 0 ? "▲" : "▼";
+  var col = d > 0 ? "text-rose-600" : "text-sky-600";
+  return '<p class="mt-1 text-xs font-medium ' + col + '">' + arrow + " " +
+    Math.abs(d).toLocaleString("pt-BR") + " vs. anterior</p>";
+}
+
+function groupSearchText(g) {
+  var parts = [g.title || ""];
+  (g.measures || []).forEach(function (m) {
+    parts.push(m.name || "", m.value || "", m.reference || "");
+  });
+  (g.blocks || []).forEach(function (b) {
+    parts.push(b.title || "", b.material || "", b.method || "");
+  });
+  if (g.kind === "img") parts.push((g.text || []).join(" "), g.medico || "", g.responsavel || "");
+  if (g.evolution) {
+    g.evolution.series.forEach(function (s) {
+      parts.push(s.name || "", s.reference || "");
+      (s.points || []).forEach(function (p) { parts.push(p.value || ""); });
+    });
+  }
+  return parts.join(" ").toLowerCase();
+}
+
+function groupStatus(g) {
+  if (g.kind === "img") return "img";
+  var anyRef = false, altered = false;
+  function check(num, ref) {
+    if (num == null || !ref) return;
+    anyRef = true;
+    if ((ref[0] != null && num < ref[0]) || (ref[1] != null && num > ref[1])) altered = true;
+  }
+  (g.measures || []).forEach(function (m) {
+    check(parseNum(m.value), parseRef(m.reference));
+  });
+  if (g.evolution) {
+    g.evolution.series.forEach(function (s) {
+      var ref = parseRef(s.reference);
+      (s.points || []).forEach(function (p) { check(p.num, ref); });
+    });
+  }
+  if (!anyRef) return "sem-ref";
+  return altered ? "alterado" : "normal";
+}
+
+function statusChip(st) {
+  if (st === "alterado") return badgeHtml("high", "Alterado");
+  if (st === "normal") return badgeHtml("ok", "Normal");
+  if (st === "img") return '<span class="inline-flex shrink-0 items-center rounded-full bg-violet-50 px-2 py-0.5 text-[11px] font-semibold text-violet-700 ring-1 ring-inset ring-violet-200">Imagem</span>';
+  return badgeHtml("neut", "Sem referência");
+}
+
+function hasActiveFilters() {
+  return !!(filters.q || filters.setor || filters.status || filters.dia);
+}
+
+function matchesGroup(g) {
+  if (filters.setor && g.setor !== filters.setor) return false;
+  var st = groupStatus(g);
+  if (filters.status && st !== filters.status && !(filters.status === "sem-ref" && st === "img")) return false;
+  if (filters.q && groupSearchText(g).indexOf(filters.q) < 0) return false;
+  return true;
+}
+
+function dayHasMatch(day) {
+  return day.groups.some(matchesGroup);
+}
+
+function renderContexto() {
+  document.getElementById("ctx").innerHTML = CLINICO.context;
+}
+
+function statChip(num, label, cls) {
+  return '<div class="rounded-xl bg-white/10 px-3 py-2 text-center ring-1 ring-inset ring-white/20">' +
+    '<div class="text-lg font-bold leading-none text-white">' + num + "</div>" +
+    '<div class="mt-1 text-[10px] font-medium uppercase tracking-wide text-blue-200">' + label + "</div></div>";
+}
+
+function renderStats() {
+  var el = document.getElementById("statstrip");
+  var total = 0, alterados = 0, normais = 0, semref = 0;
+  days.forEach(function (day) {
+    day.groups.forEach(function (g) {
+      total++;
+      var st = groupStatus(g);
+      if (st === "alterado") alterados++;
+      else if (st === "normal") normais++;
+      else if (st === "sem-ref") semref++;
+    });
+  });
+  el.innerHTML =
+    statChip(days.length, "dias", "") +
+    statChip(total, "exames", "") +
+    statChip(alterados, "alterados", "") +
+    statChip(normais, "normais", "");
+}
+
+function renderDiaOptions() {
+  var sel = document.getElementById("f-dia");
+  var seen = {};
+  days.forEach(function (day) {
+    var d = fileDate(day);
+    var dk = dayKey(d);
+    if (!dk || seen[dk]) return;
+    seen[dk] = true;
+    var opt = document.createElement("option");
+    opt.value = dk;
+    opt.textContent = d;
+    sel.appendChild(opt);
+  });
+}
+
+function renderCronologia() {
+  var el = document.getElementById("linha");
+  var out = [];
+  var manual = {};
+  CLINICO.events.forEach(function (e) {
+    (manual[e.date] = manual[e.date] || []).push(e.text);
+  });
+  var firstArterial = true;
+  days.forEach(function (day, di) {
+    var date = fileDate(day);
+    var dk = dayKey(date);
+    var imgTitles = [], setores = {};
+    day.groups.forEach(function (g) {
+      if (g.kind === "img") { if (imgTitles.indexOf(g.title) < 0) imgTitles.push(g.title); }
+      else if (g.setor) setores[g.setor] = true;
+    });
+    var ev = [];
+    if (di === 0 && setores["Pronto socorro"]) ev.push({ t: "Atendimento no pronto-socorro", c: "bg-orange-50 text-orange-700 ring-orange-200" });
+    if (setores["Internado"]) ev.push({ t: "Internado (UTI/Enfermaria)", c: "bg-emerald-50 text-emerald-700 ring-emerald-200" });
+
+    var dayKeys = {};
+    if (dk) KEYS.forEach(function (k) {
+      var dv = dayValueForDate(day, k, dk);
+      if (dv) dayKeys[k.label] = { key: k, dv: dv };
+    });
+
+    var feats = [];
+    var arterial = day.groups.filter(function (g) { return g.kind === "lab" && /GASOMETRIA ARTERIAL/.test(g.title); }).length;
+    var hemocultura = day.groups.filter(function (g) { return /HEMOCULTURA/.test(g.title); }).length;
+    var culturo = day.groups.filter(function (g) { return /CULTURA/.test(g.title) && !/HEMOCULTURA/.test(g.title); }).length;
+    var vanco = day.groups.some(function (g) { return /^VANCOMICINA/.test(g.title); });
+    var tropo = day.groups.some(function (g) { return /TROPONINA/.test(g.title); });
+    var fibri = day.groups.some(function (g) { return /FIBRINOGENIO/.test(g.title); });
+    if (arterial) feats.push(firstArterial ? "primeira gasometria arterial" : "gasometria arterial");
+    if (hemocultura) feats.push(hemocultura + " hemoculturas");
+    if (culturo) feats.push("culturas (" + culturo + ")");
+    if (vanco) feats.push("nível de vancomicina (ATB)");
+    if (tropo) feats.push("troponina (avaliação cardíaca)");
+    if (fibri) feats.push("fibrinogênio (coagulação)");
+    if (arterial) firstArterial = false;
+
+    var tags = ev.map(function (e) {
+      return '<span class="inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-semibold ring-1 ring-inset ' + e.c + '">' + esc(e.t) + "</span>";
+    }).join("");
+    if (imgTitles.length) tags += imgTitles.map(function (t) {
+      return '<span class="inline-flex items-center rounded-full bg-violet-50 px-2 py-0.5 text-[11px] font-semibold text-violet-700 ring-1 ring-inset ring-violet-200">' + esc(t) + "</span>";
+    }).join("");
+    if (feats.length) tags += feats.map(function (f) {
+      return '<span class="inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-600 ring-1 ring-inset ring-slate-200">' + esc(f) + "</span>";
+    }).join("");
+
+    var html = "<li><div class='flex flex-wrap items-center gap-2'>" +
+      "<h3 class='text-base font-bold text-slate-900'>" + (date ? fmtDia(date) : "Dia " + (di + 1)) + "</h3>" + tags + "</div>";
+    if (manual[date]) html += "<ul class='mt-2 space-y-1 pl-1'>" + manual[date].map(function (t) {
+      return "<li class='flex items-start gap-2 text-sm text-slate-700'><span class='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-400'></span><span><b>" + esc(t) + "</b></span></li>";
+    }).join("") + "</ul>";
+    if (Object.keys(dayKeys).length) {
+      var chips = Object.keys(dayKeys).map(function (lbl) {
+        var k = dayKeys[lbl].key, dv = dayKeys[lbl].dv;
+        var disp = dv.point.value, num = dv.point.num;
+        if (k.autoConvert && num != null && Math.abs(num) >= k.autoConvert.threshold) {
+          num = num * k.autoConvert.factor;
+          disp = num.toFixed(k.autoConvert.dec).replace(".", ",");
+        }
+        var cls = badgeClass(num, dv.ref) ||
+          (k.lo != null && num != null ? (num > k.hi ? "high" : (num < k.lo ? "low" : "ok")) : (num != null ? "ok" : ""));
+        return '<span class="inline-flex flex-wrap items-center gap-1 rounded-lg border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs">' +
+          "<b>" + esc(lbl) + ":</b> " + esc(disp) +
+          (k.unit ? " <span class='text-slate-400'>" + esc(k.unit) + "</span>" : "") +
+          (cls ? badgeHtml(cls, cls === "high" ? "Alto" : (cls === "low" ? "Baixo" : "Normal")) : "") +
+          "</span>";
+      }).join("");
+      html += "<div class='mt-3 flex flex-wrap gap-2'>" + chips + "</div>";
+    }
+    out.push(html + "</li>");
+  });
+  el.innerHTML = out.join("");
+}
+
+function cardStatus(k, r) {
+  var v = r.last.num;
+  if (k.autoConvert && v != null && Math.abs(v) >= k.autoConvert.threshold) v = v * k.autoConvert.factor;
+  var cls = badgeClass(v, r.ref) ||
+    (k.lo != null && v != null ? (v > k.hi ? "high" : (v < k.lo ? "low" : "ok")) : (v != null ? "ok" : ""));
+  if (!cls || v == null) return "sem-ref";
+  return (cls === "high" || cls === "low") ? "alterado" : "normal";
+}
+
+function keyCardHtml(k) {
+  var r = latestForKey(days, k);
+  if (!r) {
+    return '<article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-card">' +
+      '<h3 class="text-sm font-bold text-slate-900">' + esc(k.label) + "</h3>" +
+      '<p class="mt-2 text-xs text-slate-400">Sem dados disponíveis</p></article>';
+  }
+  var v = r.last.num, disp = r.last.value;
+  var prevNum = r.prev ? r.prev.num : null;
+  if (k.autoConvert && v != null && Math.abs(v) >= k.autoConvert.threshold) {
+    v = v * k.autoConvert.factor;
+    disp = v.toFixed(k.autoConvert.dec).replace(".", ",");
+    if (prevNum != null && Math.abs(prevNum) >= k.autoConvert.threshold) prevNum = prevNum * k.autoConvert.factor;
+  }
+  var cls = badgeClass(v, r.ref) ||
+    (k.lo != null && v != null ? (v > k.hi ? "high" : (v < k.lo ? "low" : "ok")) : (v != null ? "ok" : ""));
+  var unit = k.unit || r.unit;
+  var status = cardStatus(k, r);
+  var ring = status === "alterado" ? "ring-rose-200"
+           : status === "normal" ? "ring-emerald-200"
+           : "ring-slate-200";
+  return '<article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-card ring-1 ring-inset ' + ring + '">' +
+    '<div class="flex items-start justify-between gap-2">' +
+      '<h3 class="text-sm font-bold text-slate-900">' + esc(k.label) + "</h3>" +
+      (cls ? badgeHtml(cls, cls === "high" ? "Alto" : (cls === "low" ? "Baixo" : "Normal")) : badgeHtml("neut", "Sem referência")) +
+    "</div>" +
+    '<p class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900">' + esc(disp) +
+      (unit ? ' <span class="text-sm font-medium text-slate-400">' + esc(unit) + "</span>" : "") + "</p>" +
+    '<p class="mt-1 text-xs text-slate-500">' +
+      (r.s.reference ? "Ref: " + esc(r.s.reference) : "Sem referência") +
+      (k.note ? " · " + esc(k.note) : "") + "</p>" +
+    sparkline(r.points, r.ref, 280, 44) +
+    deltaHtml(v, prevNum) +
+    '<p class="mt-1 text-[11px] text-slate-400">Atualizado em ' + fmtDT(r.last.datetime) + "</p></article>";
+}
+
+function emptyState(msg) {
+  return '<div class="col-span-full rounded-2xl border border-dashed border-slate-300 bg-white/60 p-10 text-center">' +
+    '<p class="text-sm text-slate-500">' + esc(msg) + "</p></div>";
+}
+
+function renderChave() {
+  var el = document.getElementById("chave-grid");
+  var out = [];
+  KEYS.forEach(function (k) {
+    var r = latestForKey(days, k);
+    if (!r) {
+      if (!hasActiveFilters()) { out.push(keyCardHtml(k)); }
+      return;
+    }
+    var st = cardStatus(k, r);
+    if (filters.setor && r.grp.setor !== filters.setor) return;
+    if (filters.dia && isoDay(r.last.datetime) !== filters.dia) return;
+    if (filters.status && st !== filters.status) return;
+    if (filters.q) {
+      var hay = (k.label + " " + k.series + " " + (r.last.value || "") + " " + (r.s.reference || "")).toLowerCase();
+      if (hay.indexOf(filters.q) < 0) return;
+    }
+    out.push(keyCardHtml(k));
+  });
+  el.innerHTML = out.length ? out.join("") : emptyState("Nenhum exame-chave corresponde aos filtros.");
+}
+
+function measuresHtml(measures) {
+  if (!measures || !measures.length) return "";
+  var rows = measures.map(function (m) {
+    var num = parseNum(m.value), ref = parseRef(m.reference);
+    var cls = (num != null && ref) ? badgeClass(num, ref) : "";
+    var badge = (cls && cls !== "ok") ? badgeHtml(cls, cls === "high" ? "Alto" : "Baixo") : "";
+    return "<tr>" +
+      "<td class='px-3 py-1.5 text-left align-top text-slate-700'><span class='font-medium'>" + esc(m.name || "—") + "</span></td>" +
+      "<td class='px-3 py-1.5 text-left align-top font-semibold text-slate-900'>" + esc(m.value) + " " + badge + "</td>" +
+      "<td class='px-3 py-1.5 text-left align-top text-slate-500'>" + esc(m.reference || "—") + "</td></tr>";
+  }).join("");
+  return '<div class="overflow-x-auto rounded-xl border border-slate-200">' +
+    '<table class="w-full min-w-[420px] border-collapse text-sm">' +
+    "<thead><tr class='border-b border-slate-200 bg-slate-50'>" +
+    "<th scope='col' class='px-3 py-2 text-left text-[11px] font-bold uppercase tracking-wide text-slate-500'>Parâmetro</th>" +
+    "<th scope='col' class='px-3 py-2 text-left text-[11px] font-bold uppercase tracking-wide text-slate-500'>Resultado</th>" +
+    "<th scope='col' class='px-3 py-2 text-left text-[11px] font-bold uppercase tracking-wide text-slate-500'>Referência</th></tr></thead>" +
+    "<tbody>" + rows + "</tbody></table></div>";
+}
+
+function seriesHtml(evo) {
+  if (!evo || !evo.series || !evo.series.length) return "";
+  var out = "";
+  evo.series.forEach(function (s, si) {
+    if (!s.points || !s.points.length) return;
+    var name = s.name || evo.title || "Valores";
+    var rows = s.points.slice().reverse().map(function (p) {
+      var cls = badgeClass(p.num, parseRef(s.reference));
+      var badge = (cls && cls !== "ok") ? badgeHtml(cls, cls === "high" ? "Alto" : "Baixo") : "";
+      return "<tr>" +
+        "<td class='px-3 py-1.5 text-left align-top whitespace-nowrap text-slate-500'>" + fmtDT(p.datetime) + "</td>" +
+        "<td class='px-3 py-1.5 text-left align-top font-semibold text-slate-900'>" + esc(p.value) + " " + badge + "</td>" +
+        "<td class='px-3 py-1.5 text-left align-top text-slate-500'>" + esc(s.reference || "—") + "</td></tr>";
+    }).join("");
+    out += '<div class="' + (si > 0 ? "mt-4 " : "") + 'serie">' +
+      '<h4 class="mb-1.5 text-xs font-bold uppercase tracking-wide text-blue-800">' + esc(name) + "</h4>" +
+      '<div class="points overflow-hidden rounded-xl border border-slate-200">' +
+      '<table class="w-full min-w-[420px] border-collapse text-sm">' +
+      "<thead><tr class='border-b border-slate-200 bg-slate-50'>" +
+      "<th scope='col' class='px-3 py-2 text-left text-[11px] font-bold uppercase tracking-wide text-slate-500'>Data</th>" +
+      "<th scope='col' class='px-3 py-2 text-left text-[11px] font-bold uppercase tracking-wide text-slate-500'>Valor</th>" +
+      "<th scope='col' class='px-3 py-2 text-left text-[11px] font-bold uppercase tracking-wide text-slate-500'>Referência</th></tr></thead>" +
+      "<tbody>" + rows + "</tbody></table></div></div>";
+  });
+  return out;
+}
+
+function groupCardHtml(g, open) {
+  var st = groupStatus(g);
+  var ring = st === "alterado" ? "ring-rose-200"
+           : st === "normal" ? "ring-emerald-200"
+           : "ring-slate-200";
+  var html = '<details ' + (open ? "open " : "") + 'class="group rounded-2xl border border-slate-200 bg-white shadow-card ring-1 ring-inset ' + ring + '">' +
+    '<summary class="flex cursor-pointer items-center gap-3 px-4 py-3 select-none hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-500/40">' +
+      '<svg class="chev h-4 w-4 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">' +
+        '<path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>' +
+      setorChip(g) +
+      '<span class="flex-1 text-sm font-semibold text-slate-800">' + esc(g.title || "(sem título)") + "</span>" +
+      statusChip(st) +
+    "</summary>" +
+    '<div class="border-t border-slate-100 px-4 pb-4 pt-3">';
+  if (g.kind === "img") {
+    if (g.data || g.medico) {
+      html += '<p class="mb-2 text-xs text-slate-500">' +
+        (g.data ? "<b>Data:</b> " + esc(g.data) : "") +
+        (g.medico ? " · <b>Médico:</b> " + esc(g.medico) : "") + "</p>";
+    }
+    if (g.text && g.text.length) {
+      html += '<p class="text-sm whitespace-pre-wrap leading-relaxed text-slate-700">' + esc(g.text.join("\n")) + "</p>";
+    }
+    if (g.responsavel && g.responsavel.length) {
+      html += '<p class="mt-3 text-xs text-slate-400">' + esc(g.responsavel.join(" · ")) + "</p>";
+    }
+  } else {
+    if (g.blocks && g.blocks.length) {
+      var blocos = g.blocks.map(function (b) {
+        var bits = [];
+        if (b.title) bits.push("<b>" + esc(b.title) + "</b>");
+        if (b.coleta) bits.push("coleta " + esc(b.coleta));
+        if (b.material) bits.push("material: " + esc(b.material));
+        if (b.method) bits.push(esc(b.method));
+        return "<div class='text-xs text-slate-500'>" + bits.join(" · ") + "</div>";
+      }).join("");
+      html += '<div class="mb-3 space-y-0.5">' + blocos + "</div>";
+    }
+    var measuresHtmlPart = measuresHtml(g.measures);
+    if (measuresHtmlPart) html += '<div class="mt-3">' + measuresHtmlPart + "</div>";
+    html += seriesHtml(g.evolution);
+  }
+  html += "</div></details>";
+  return html;
+}
+
+function renderDiaList() {
+  var el = document.getElementById("dia-list");
+  var out = [];
+  days.forEach(function (day, di) {
+    var date = fileDate(day);
+    var groups = day.groups.filter(matchesGroup);
+    if (!groups.length) return;
+    var html = "<section aria-label='" + esc(date || day.source) + "'>" +
+      "<h3 class='flex flex-wrap items-center gap-2 text-lg font-bold text-slate-900'>" +
+        esc(date || day.source) +
+        '<span class="rounded-full bg-slate-200 px-2 py-0.5 text-xs font-semibold text-slate-600">' + groups.length + " exame" + (groups.length > 1 ? "s" : "") + "</span>" +
+      "</h3>" +
+      "<div class='mt-3 space-y-3'>";
+    groups.forEach(function (g, gi) {
+      html += groupCardHtml(g, gi === 0);
+    });
+    html += "</div></section>";
+    out.push(html);
+  });
+  el.innerHTML = out.length ? out.join("") : emptyState("Nenhum exame corresponde aos filtros.");
+}
+
+function renderContagem() {
+  var total = 0;
+  days.forEach(function (day) { total += day.groups.length; });
+  var shown = 0;
+  days.forEach(function (day) {
+    day.groups.forEach(function (g) { if (matchesGroup(g)) shown++; });
+  });
+  var el = document.getElementById("contagem");
+  el.textContent = hasActiveFilters()
+    ? "Mostrando " + shown + " de " + total + " exames" + (filters.q ? ' para "' + filters.q + '"' : "")
+    : "Total de " + total + " exames em " + days.length + " dia" + (days.length > 1 ? "s" : "");
+  var btn = document.getElementById("btn-limpar");
+  if (hasActiveFilters()) {
+    btn.classList.remove("hidden");
+    btn.classList.add("inline-flex");
+  } else {
+    btn.classList.add("hidden");
+    btn.classList.remove("inline-flex");
+  }
+}
+
+function renderAll() {
+  renderStats();
+  renderCronologia();
+  renderChave();
+  renderDiaList();
+  renderContagem();
+}
+
+function wireFilters() {
+  var deb;
+  function collect() {
+    filters.q = document.getElementById("busca").value.trim().toLowerCase();
+    filters.setor = document.getElementById("f-setor").value;
+    filters.status = document.getElementById("f-status").value;
+    filters.dia = document.getElementById("f-dia").value;
+  }
+  function onChange() {
+    collect();
+    renderChave();
+    renderDiaList();
+    renderContagem();
+  }
+  document.getElementById("busca").addEventListener("input", function () {
+    clearTimeout(deb);
+    deb = setTimeout(onChange, 150);
+  });
+  document.getElementById("f-setor").addEventListener("change", onChange);
+  document.getElementById("f-status").addEventListener("change", onChange);
+  document.getElementById("f-dia").addEventListener("change", onChange);
+  document.getElementById("btn-limpar").addEventListener("click", function () {
+    document.getElementById("busca").value = "";
+    document.getElementById("f-setor").value = "";
+    document.getElementById("f-status").value = "";
+    document.getElementById("f-dia").value = "";
+    filters = { q: "", setor: "", status: "", dia: "" };
+    onChange();
+    document.getElementById("busca").focus();
+  });
+}
+
+function loadData() {
+  var urls = ["data/all_exams.json", "../data/all_exams.json"];
+  return fetch(urls[0])
+    .then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    })
+    .catch(function () {
+      return fetch(urls[1]).then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      });
+    });
+}
+
+function showError(msg) {
+  document.getElementById("contagem").textContent = "";
+  document.getElementById("ctx").innerHTML = msg;
+  document.getElementById("chave-grid").innerHTML =
+    '<div class="col-span-full rounded-2xl border border-dashed border-rose-300 bg-rose-50/60 p-10 text-center">' +
+    '<p class="text-sm font-medium text-rose-700">Não foi possível carregar os dados.</p>' +
+    '<p class="mt-1 text-xs text-rose-600">' + esc(msg) + "</p>" +
+    '<p class="mt-2 text-xs text-slate-500">Verifique se o arquivo <code class="rounded bg-slate-200 px-1 py-0.5 font-mono text-[11px]">data/all_exams.json</code> existe no site publicado.</p></div>';
+  document.getElementById("dia-list").innerHTML = "";
+}
+
+document.getElementById("contagem").textContent = "Carregando dados…";
+
+loadData()
+  .then(function (env) {
+    days = Array.isArray(env) ? env : (env && Array.isArray(env.data) ? env.data : []);
+    if (!days.length) throw new Error("all_exams.json vazio");
+    var gen = (env && env.meta && env.meta.generated_at) ||
+              (days.length ? days[days.length - 1].generated_at : null);
+    document.getElementById("atualizado").textContent =
+      "Dados atualizados: " + (gen ? String(gen).replace("T", " ").slice(0, 16) : "—");
+    renderContexto();
+    renderDiaOptions();
+    renderAll();
+    wireFilters();
+  })
+  .catch(function (e) {
+    showError(String(e && e.message ? e.message : e));
+  });
+
+</script>
+</body>
+</html>
