@@ -5,7 +5,7 @@
     "nasc": "14/10/1940"
   },
   "n_groups": 17,
-  "generated_at": "2026-08-05T17:22:44",
+  "generated_at": "2026-08-05T17:39:45",
   "groups": [
     {
       "kind": "lab",
@@ -31,14 +31,7 @@
           "method": "Cultivo em meio de cultura cromogênico seletivo"
         }
       ],
-      "measures": [
-        {
-          "name": "Data da coleta",
-          "value": "02/08/2026 03:05:37",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 03:05:37"
-        }
-      ],
+      "measures": [],
       "recebido": [
         "Recebido em: 01/08/2026 às 22:55h - Liberado em: 03/08/2026 às 21:07h"
       ],
@@ -168,12 +161,6 @@
       ],
       "measures": [
         {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:18:16",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:18:16"
-        },
-        {
           "name": null,
           "value": "133 mg/dL",
           "reference": "10 a 50 mg/dL",
@@ -264,12 +251,6 @@
         }
       ],
       "measures": [
-        {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:16:43",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:16:43"
-        },
         {
           "name": "RESULTADO",
           "value": "38,1 segundos",
@@ -465,12 +446,6 @@
       ],
       "measures": [
         {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:16:43",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:16:43"
-        },
-        {
           "name": null,
           "value": "16,4 segundos",
           "reference": "10,1 a 12,8 segundos",
@@ -620,12 +595,6 @@
       ],
       "measures": [
         {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:16:43",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:16:43"
-        },
-        {
           "name": null,
           "value": "134 mEq/L",
           "reference": "136 a 145 mEq/L",
@@ -717,12 +686,6 @@
         }
       ],
       "measures": [
-        {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:18:16",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:18:16"
-        },
         {
           "name": null,
           "value": "11,62 mg/dL",
@@ -861,12 +824,6 @@
       ],
       "measures": [
         {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:16:43",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:16:43"
-        },
-        {
           "name": null,
           "value": "4,7 mEq/L",
           "reference": "A partir de 1 ano: 3,5 a 4,5 mEq/L",
@@ -957,12 +914,6 @@
         }
       ],
       "measures": [
-        {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:22:45",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:22:45"
-        },
         {
           "name": null,
           "value": "1,9 mg/dL",
@@ -1059,12 +1010,6 @@
         }
       ],
       "measures": [
-        {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:45:13",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:45:13"
-        },
         {
           "name": "ERITRÓCITOS",
           "value": "2,64 milhões/mm3",
@@ -2576,12 +2521,6 @@
       ],
       "measures": [
         {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:22:45",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:22:45"
-        },
-        {
           "name": null,
           "value": "3,6 mg/dL",
           "reference": "Acima de 13 anos e adultos: 2,5 a 4,5 mg/dL",
@@ -2673,12 +2612,6 @@
         }
       ],
       "measures": [
-        {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:18:16",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:18:16"
-        },
         {
           "name": null,
           "value": "5,55 mg/dL",
@@ -2929,12 +2862,6 @@
       ],
       "measures": [
         {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:04:48",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:04:48"
-        },
-        {
           "name": null,
           "value": "1,18 mmol/L",
           "reference": "1,11 a 1,40 mmol/L",
@@ -3028,12 +2955,6 @@
       ],
       "measures": [
         {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:22:46",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:22:46"
-        },
-        {
           "name": null,
           "value": "394 U/L",
           "reference": "maior que 1 ano: até 41 U/L",
@@ -3125,12 +3046,6 @@
       ],
       "measures": [
         {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:22:45",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:22:45"
-        },
-        {
           "name": null,
           "value": "138 U/L",
           "reference": "Masculino: de 12 a 73 U/L",
@@ -3215,12 +3130,6 @@
         }
       ],
       "measures": [
-        {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:22:45",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:22:45"
-        },
         {
           "name": "198 U/L                            Adultos",
           "value": "40 a 129 U/L",
@@ -3314,12 +3223,6 @@
         }
       ],
       "measures": [
-        {
-          "name": "Data da coleta",
-          "value": "02/08/2026 22:22:45",
-          "reference": null,
-          "line": "Data da coleta: 02/08/2026 22:22:45"
-        },
         {
           "name": null,
           "value": "249 U/L",

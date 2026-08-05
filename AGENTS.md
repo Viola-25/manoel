@@ -90,6 +90,13 @@ Grupo `img`:
 4. Conferir em `python -m http.server 8000` → `/public/`
 5. Commit dos `data/*.json` e push (workflow publica sozinho).
 
+## Auditoria multi-agente
+
+Para checagem geral antes de commits grandes, usar **AUDITORIA.md**: prompts
+prontos para 5 subagentes em paralelo (organização/schema, corretude dos valores,
+frontend, sanidade clínica, datas). Disparar via tool Task (`subagent_type: explore`),
+read-only, e consolidar achados P1/P2/P3 antes do push.
+
 ## Armadilhas
 
 - NÃO abrir `index.html` via `file://` — CORS bloqueia fetch de `all_exams.json`. Sempre servir via HTTP.

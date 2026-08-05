@@ -243,7 +243,7 @@ def extract_measures(text_lines: TextLines,
     i = 0
     while i < len(text_lines):
         s = text_lines[i].strip()
-        if not s or is_ref(s):
+        if not s or is_ref(s) or s.startswith(("Data da coleta:", "Data e hora da coleta:")):
             i += 1
             continue
         m = MEASURE_KEYED.match(s)
@@ -426,12 +426,16 @@ def parse_evolution(lines: TextLines) -> Record:
                 j += 1
             else:
                 val_line = None
-            current["points"].append({
+            pt = {
                 "datetime": dt,
                 "raw": raw,
                 "value": None if val_line in (None, "[*]") else val_line,
                 "num": to_num(val_line),
-            })
+            }
+            pts = current["points"]
+            if not pts or not (pts[-1]["datetime"] == pt["datetime"]
+                               and pts[-1]["value"] == pt["value"]):
+                pts.append(pt)
             pending_name = []
             pending_ref = None
             i = j
