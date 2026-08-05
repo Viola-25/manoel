@@ -5,7 +5,7 @@
     "nasc": "14/10/1940"
   },
   "n_groups": 37,
-  "generated_at": "2026-08-05T16:41:43",
+  "generated_at": "2026-08-05T17:22:44",
   "groups": [
     {
       "kind": "lab",
@@ -2389,7 +2389,7 @@
             ]
           },
           {
-            "name": "[*] [*] [*] [*] [*] Promielócitos (%)",
+            "name": "Promielócitos (%)",
             "name_lines": [
               "[*]",
               "[*]",
@@ -7102,7 +7102,7 @@
             ]
           },
           {
-            "name": "[*] [*] [*] [*] Promielócitos (%)",
+            "name": "Promielócitos (%)",
             "name_lines": [
               "[*]",
               "[*]",
@@ -7397,7 +7397,7 @@
             ]
           },
           {
-            "name": "[*] [*] [*] [*] [*] Leucócitos quantitativo, urina inferior a 20.000/mL",
+            "name": "Leucócitos quantitativo, urina inferior a 20.000/mL",
             "name_lines": [
               "[*]",
               "[*]",
@@ -7419,7 +7419,7 @@
             ]
           },
           {
-            "name": "[*] [*] [*] [*] [*] Eritrócitos quantitativo, urina inferior a 10.000/mL",
+            "name": "Eritrócitos quantitativo, urina inferior a 10.000/mL",
             "name_lines": [
               "[*]",
               "[*]",
@@ -7441,7 +7441,7 @@
             ]
           },
           {
-            "name": "[*] [*] [*] [*] [*] Parcial - Cultura Automatizada",
+            "name": "Parcial - Cultura Automatizada",
             "name_lines": [
               "[*]",
               "[*]",

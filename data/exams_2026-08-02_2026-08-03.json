@@ -5,7 +5,7 @@
     "nasc": "14/10/1940"
   },
   "n_groups": 17,
-  "generated_at": "2026-08-05T16:41:44",
+  "generated_at": "2026-08-05T17:22:44",
   "groups": [
     {
       "kind": "lab",
@@ -74,7 +74,7 @@
             ]
           },
           {
-            "name": "[*] [*] [*] [*] Parcial - Bacilos Gram-negativos Resistente A",
+            "name": "Parcial - Bacilos Gram-negativos Resistente A",
             "name_lines": [
               "[*]",
               "[*]",
@@ -2523,7 +2523,7 @@
             ]
           },
           {
-            "name": "[*] [*] [*] [*] Promielócitos (%)",
+            "name": "Promielócitos (%)",
             "name_lines": [
               "[*]",
               "[*]",

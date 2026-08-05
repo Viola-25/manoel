@@ -4,8 +4,8 @@
     "name": "Manoel Rodrigues de Oliveira",
     "nasc": "14/10/1940"
   },
-  "n_groups": 38,
-  "generated_at": "2026-08-05T16:41:44",
+  "n_groups": 48,
+  "generated_at": "2026-08-05T17:22:45",
   "groups": [
     {
       "kind": "lab",
@@ -2474,7 +2474,7 @@
             ]
           },
           {
-            "name": "[*] [*] [*] [*] Promielócitos (%)",
+            "name": "Promielócitos (%)",
             "name_lines": [
               "[*]",
               "[*]",
@@ -6947,7 +6947,7 @@
             ]
           },
           {
-            "name": "[*] [*] [*] [*] Promielócitos (%)",
+            "name": "Promielócitos (%)",
             "name_lines": [
               "[*]",
               "[*]",
@@ -8615,6 +8615,1394 @@
                 "raw": "01/12/24 14:13",
                 "value": "11",
                 "num": 11.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580622024",
+      "atendimento": "20941147",
+      "data": "05/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "TEMPO DE TROMBOPLASTINA PARCIAL ATIVADA, URGENTE, plasma",
+      "pages": [
+        84,
+        85
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "05/08/2026 14:28:46",
+          "title": "TEMPO DE TROMBOPLASTINA PARCIAL ATIVADA, URGENTE, plasma",
+          "title_lines": [
+            "TEMPO DE TROMBOPLASTINA PARCIAL ATIVADA, URGENTE, plasma"
+          ],
+          "method": "Coagulométrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "05/08/2026 14:28:46",
+          "reference": null,
+          "line": "Data da coleta: 05/08/2026 14:28:46"
+        },
+        {
+          "name": "RESULTADO",
+          "value": "35,0 segundos",
+          "reference": null,
+          "line": "RESULTADO              : 35,0 segundos"
+        },
+        {
+          "name": "NORMAL DO DIA",
+          "value": "30,7 segundos",
+          "reference": null,
+          "line": "NORMAL DO DIA          : 30,7 segundos"
+        },
+        {
+          "name": "RELACAO PACIENTE/NORMAL",
+          "value": "1,14",
+          "reference": "0,91 a 1,20",
+          "line": "RELACAO PACIENTE/NORMAL: 1,14                       0,91 a 1,20"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 05/08/2026 às 14:29h - Liberado em: 05/08/2026 às 15:07h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DRA MARIA CAROLINA TOSTES PINTAO - CRM 91813SP"
+      ],
+      "result_text": "TEMPO DE TROMBOPLASTINA PARCIAL ATIVADA, URGENTE, plasma\nData da coleta: 05/08/2026 14:28:46\nTEMPO DE TROMBOPLASTINA PARCIAL ATIVADA, URGENTE, plasma\nMétodo: Coagulométrico\nVALORES DE REFERÊNCIA\nRESULTADO              : 35,0 segundos\nNORMAL DO DIA          : 30,7 segundos\nRELACAO PACIENTE/NORMAL: 1,14                       0,91 a 1,20",
+      "evolution": {
+        "title": "Tempo de Tromboplastina Parcial TTPA-Normal do dia",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Tempo de Tromboplastina Parcial",
+              "TTPA-Normal do dia"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "30,7",
+                "num": 30.7
+              },
+              {
+                "datetime": "2026-08-05T05:10",
+                "raw": "05/08/26 05:10",
+                "value": "30,7",
+                "num": 30.7
+              },
+              {
+                "datetime": "2026-08-05T00:51",
+                "raw": "05/08/26 00:51",
+                "value": "30,7",
+                "num": 30.7
+              },
+              {
+                "datetime": "2026-08-04T19:55",
+                "raw": "04/08/26 19:55",
+                "value": "30,7",
+                "num": 30.7
+              },
+              {
+                "datetime": "2026-08-03T22:13",
+                "raw": "03/08/26 22:13",
+                "value": "30,7",
+                "num": 30.7
+              },
+              {
+                "datetime": "2026-08-02T22:16",
+                "raw": "02/08/26 22:16",
+                "value": "30,7",
+                "num": 30.7
+              }
+            ]
+          },
+          {
+            "name": "TTPA- Paciente/Normal",
+            "name_lines": [
+              "TTPA-",
+              "Paciente/Normal"
+            ],
+            "reference": "0,91 a 1,20",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "1,14",
+                "num": 1.14
+              },
+              {
+                "datetime": "2026-08-05T05:10",
+                "raw": "05/08/26 05:10",
+                "value": "1,24",
+                "num": 1.24
+              },
+              {
+                "datetime": "2026-08-05T00:51",
+                "raw": "05/08/26 00:51",
+                "value": "1,28",
+                "num": 1.28
+              },
+              {
+                "datetime": "2026-08-04T19:55",
+                "raw": "04/08/26 19:55",
+                "value": ",99",
+                "num": 0.99
+              },
+              {
+                "datetime": "2026-08-03T22:13",
+                "raw": "03/08/26 22:13",
+                "value": "1,37",
+                "num": 1.37
+              },
+              {
+                "datetime": "2026-08-02T22:16",
+                "raw": "02/08/26 22:16",
+                "value": "1,24",
+                "num": 1.24
+              }
+            ]
+          },
+          {
+            "name": "TTPA",
+            "name_lines": [
+              "TTPA"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "35",
+                "num": 35.0
+              },
+              {
+                "datetime": "2026-08-05T05:10",
+                "raw": "05/08/26 05:10",
+                "value": "38,1",
+                "num": 38.1
+              },
+              {
+                "datetime": "2026-08-05T00:51",
+                "raw": "05/08/26 00:51",
+                "value": "39,2",
+                "num": 39.2
+              },
+              {
+                "datetime": "2026-08-04T19:55",
+                "raw": "04/08/26 19:55",
+                "value": "30,3",
+                "num": 30.3
+              },
+              {
+                "datetime": "2026-08-03T22:13",
+                "raw": "03/08/26 22:13",
+                "value": "42,2",
+                "num": 42.2
+              },
+              {
+                "datetime": "2026-08-02T22:16",
+                "raw": "02/08/26 22:16",
+                "value": "38,1",
+                "num": 38.1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580622024",
+      "atendimento": "20941147",
+      "data": "05/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "TEMPO DE PROTROMBINA, URGENTE, plasma",
+      "pages": [
+        86,
+        87
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "05/08/2026 14:28:46",
+          "title": "TEMPO DE PROTROMBINA, URGENTE, plasma",
+          "title_lines": [
+            "TEMPO DE PROTROMBINA, URGENTE, plasma"
+          ],
+          "method": "Coagulométrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "05/08/2026 14:28:46",
+          "reference": null,
+          "line": "Data da coleta: 05/08/2026 14:28:46"
+        },
+        {
+          "name": null,
+          "value": "12,9 segundos",
+          "reference": "10,1 a 12,8 segundos",
+          "line": "12,9 segundos                                10,1 a 12,8 segundos"
+        },
+        {
+          "name": "INR",
+          "value": "1,1",
+          "reference": "0,9 a 1,1",
+          "line": "INR: 1,1                                     0,9 a 1,1"
+        },
+        {
+          "name": "NORMAL DO DIA",
+          "value": "11,5 segundos",
+          "reference": null,
+          "line": "NORMAL DO DIA: 11,5 segundos"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 05/08/2026 às 14:29h - Liberado em: 05/08/2026 às 15:07h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DRA MARIA CAROLINA TOSTES PINTAO - CRM 91813SP"
+      ],
+      "result_text": "TEMPO DE PROTROMBINA, URGENTE, plasma\nData da coleta: 05/08/2026 14:28:46\nTEMPO DE PROTROMBINA, URGENTE, plasma\nMétodo: Coagulométrico\n12,9 segundos                                10,1 a 12,8 segundos\nINR: 1,1                                     0,9 a 1,1\nNORMAL DO DIA: 11,5 segundos\nISI (Índice de Sensibilidade Internacional) da tromboplastina: 1,03\nOBS.: O  uso  de  anticoagulantes pode estar relacionado ao prolongamento\ndos  tempos  de  coagulação.  Na  ausência  destas medicações, esta\nalteração  sugere  deficiência  congênita  de fatores ou inibidores\nadquiridos da coagulação.\nColocamos o serviço de assessoria médica do setor de Hemostasia à\ndisposição, para prestar maiores esclarecimentos.\nNOTA(1): Recomenda-se  o  uso  do  INR  (International Normalized Ratio)\npara  monitorização  de  paciente  em  anticoagulação  oral com\nantagonistas  de  vitamina  K  (AVKs). Para as demais situações\nclínicas,  sugere-se  o acompanhamento dos resultados expressos\nem segundos.\nNOTA(2): Para a maior parte das indicações de anticoagulação com AVKs,\no intervalo terapêutico recomendado do INR é de 2,0 a 3,0.",
+      "evolution": {
+        "title": "Tempo de protrombina (INR), plasma Tempo de Protrombina",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Tempo de protrombina (INR), plasma",
+              "Tempo de",
+              "Protrombina"
+            ],
+            "reference": "10,1 a 12,8 segundos",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "12,9",
+                "num": 12.9
+              },
+              {
+                "datetime": "2026-08-05T05:10",
+                "raw": "05/08/26 05:10",
+                "value": "13,8",
+                "num": 13.8
+              },
+              {
+                "datetime": "2026-08-05T00:51",
+                "raw": "05/08/26 00:51",
+                "value": "14,1",
+                "num": 14.1
+              },
+              {
+                "datetime": "2026-08-04T19:55",
+                "raw": "04/08/26 19:55",
+                "value": "13,9",
+                "num": 13.9
+              },
+              {
+                "datetime": "2026-08-03T22:13",
+                "raw": "03/08/26 22:13",
+                "value": "15,4",
+                "num": 15.4
+              },
+              {
+                "datetime": "2026-08-02T22:16",
+                "raw": "02/08/26 22:16",
+                "value": "16,4",
+                "num": 16.4
+              }
+            ]
+          },
+          {
+            "name": "TP/INR",
+            "name_lines": [
+              "TP/INR"
+            ],
+            "reference": "0,9 a 1,1",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "1,1",
+                "num": 1.1
+              },
+              {
+                "datetime": "2026-08-05T05:10",
+                "raw": "05/08/26 05:10",
+                "value": "1,2",
+                "num": 1.2
+              },
+              {
+                "datetime": "2026-08-05T00:51",
+                "raw": "05/08/26 00:51",
+                "value": "1,2",
+                "num": 1.2
+              },
+              {
+                "datetime": "2026-08-04T19:55",
+                "raw": "04/08/26 19:55",
+                "value": "1,2",
+                "num": 1.2
+              },
+              {
+                "datetime": "2026-08-03T22:13",
+                "raw": "03/08/26 22:13",
+                "value": "1,4",
+                "num": 1.4
+              },
+              {
+                "datetime": "2026-08-02T22:16",
+                "raw": "02/08/26 22:16",
+                "value": "1,4",
+                "num": 1.4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580622024",
+      "atendimento": "20941147",
+      "data": "05/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "POTASSIO, plasma",
+      "pages": [
+        88,
+        89
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "05/08/2026 14:28:46",
+          "title": "POTASSIO, plasma",
+          "title_lines": [
+            "POTASSIO, plasma"
+          ],
+          "method": "Potenciométrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "05/08/2026 14:28:46",
+          "reference": null,
+          "line": "Data da coleta: 05/08/2026 14:28:46"
+        },
+        {
+          "name": null,
+          "value": "5,1 mEq/L",
+          "reference": "A partir de 1 ano: 3,5 a 4,5 mEq/L",
+          "line": "5,1 mEq/L                          A partir de 1 ano: 3,5 a 4,5 mEq/L"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 05/08/2026 às 14:29h - Liberado em: 05/08/2026 às 15:18h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "POTASSIO, plasma\nData da coleta: 05/08/2026 14:28:46\nPOTASSIO, plasma\nMétodo: Potenciométrico\n5,1 mEq/L                          A partir de 1 ano: 3,5 a 4,5 mEq/L",
+      "evolution": {
+        "title": "Potássio, plasma Potássio - plasma",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Potássio, plasma",
+              "Potássio - plasma"
+            ],
+            "reference": "3,5 a 4,5 mEq/L",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "5,1",
+                "num": 5.1
+              },
+              {
+                "datetime": "2026-08-05T05:11",
+                "raw": "05/08/26 05:11",
+                "value": "5,4",
+                "num": 5.4
+              },
+              {
+                "datetime": "2026-08-05T00:51",
+                "raw": "05/08/26 00:51",
+                "value": "5,1",
+                "num": 5.1
+              },
+              {
+                "datetime": "2026-08-04T19:55",
+                "raw": "04/08/26 19:55",
+                "value": "4,7",
+                "num": 4.7
+              },
+              {
+                "datetime": "2026-08-04T11:59",
+                "raw": "04/08/26 11:59",
+                "value": "4,4",
+                "num": 4.4
+              },
+              {
+                "datetime": "2026-08-03T22:30",
+                "raw": "03/08/26 22:30",
+                "value": "4,3",
+                "num": 4.3
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580622024",
+      "atendimento": "20941147",
+      "data": "05/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "MAGNESIO, plasma",
+      "pages": [
+        90,
+        91
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "05/08/2026 14:28:46",
+          "title": "MAGNESIO, plasma",
+          "title_lines": [
+            "MAGNESIO, plasma"
+          ],
+          "method": "Colorimétrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "05/08/2026 14:28:46",
+          "reference": null,
+          "line": "Data da coleta: 05/08/2026 14:28:46"
+        },
+        {
+          "name": null,
+          "value": "2,5 mg/dL",
+          "reference": "Acima de 20 anos : 1,6 a 2,6 mg/dL",
+          "line": "2,5 mg/dL                          Acima de 20 anos : 1,6 a 2,6 mg/dL"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 05/08/2026 às 14:29h - Liberado em: 05/08/2026 às 15:18h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "MAGNESIO, plasma\nData da coleta: 05/08/2026 14:28:46\nMAGNESIO, plasma\nMétodo: Colorimétrico\n2,5 mg/dL                          Acima de 20 anos : 1,6 a 2,6 mg/dL",
+      "evolution": {
+        "title": "Magnésio, plasma Magnésio",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Magnésio, plasma",
+              "Magnésio"
+            ],
+            "reference": "1,6 a 2,6 mg/dL",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "2,5",
+                "num": 2.5
+              },
+              {
+                "datetime": "2026-08-05T05:11",
+                "raw": "05/08/26 05:11",
+                "value": "2,4",
+                "num": 2.4
+              },
+              {
+                "datetime": "2026-08-05T00:51",
+                "raw": "05/08/26 00:51",
+                "value": "2,4",
+                "num": 2.4
+              },
+              {
+                "datetime": "2026-08-04T19:55",
+                "raw": "04/08/26 19:55",
+                "value": "2,2",
+                "num": 2.2
+              },
+              {
+                "datetime": "2026-08-03T22:30",
+                "raw": "03/08/26 22:30",
+                "value": "2,2",
+                "num": 2.2
+              },
+              {
+                "datetime": "2026-08-03T02:27",
+                "raw": "03/08/26 02:27",
+                "value": "1,8",
+                "num": 1.8
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580622024",
+      "atendimento": "20941147",
+      "data": "05/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "HEMOGLOBINA, sangue total",
+      "pages": [
+        92,
+        93
+      ],
+      "blocks": [
+        {
+          "material": "Sangue Total",
+          "coleta": "05/08/2026 14:28:47",
+          "title": "HEMOGLOBINA, sangue total",
+          "title_lines": [
+            "HEMOGLOBINA, sangue total"
+          ],
+          "method": "Exame automatizado"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "05/08/2026 14:28:47",
+          "reference": null,
+          "line": "Data da coleta: 05/08/2026 14:28:47"
+        },
+        {
+          "name": null,
+          "value": "7,9 g/dL",
+          "reference": "13,3 a 16,5 g/dL",
+          "line": "7,9 g/dL                          13,3 a 16,5 g/dL"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 05/08/2026 às 14:29h - Liberado em: 05/08/2026 às 14:38h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DRA MARIA DE LOURDES L FERRARI CHAUFFAILLE - CRM 44281SP"
+      ],
+      "result_text": "HEMOGLOBINA, sangue total\nData da coleta: 05/08/2026 14:28:47\nHEMOGLOBINA, sangue total\nMétodo: Exame automatizado\nMasc: Maior ou igual a 18 anos\n7,9 g/dL                          13,3 a 16,5 g/dL\nNOTA: Os valores de referência para adultos são baseados em um\nestudo com 95 mil amostras de brasileiros saudáveis.",
+      "evolution": {
+        "title": "Hemoglobina (Hb), sangue total Hemoglobina",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Hemoglobina (Hb), sangue total",
+              "Hemoglobina"
+            ],
+            "reference": "13,3 a 16,5 g/dL",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "7,9",
+                "num": 7.9
+              },
+              {
+                "datetime": "2026-06-08T17:25",
+                "raw": "08/06/26 17:25",
+                "value": "6,5",
+                "num": 6.5
+              },
+              {
+                "datetime": "2026-04-30T09:12",
+                "raw": "30/04/26 09:12",
+                "value": "6,6",
+                "num": 6.6
+              },
+              {
+                "datetime": "2026-03-06T17:11",
+                "raw": "06/03/26 17:11",
+                "value": "6,8",
+                "num": 6.8
+              },
+              {
+                "datetime": "2026-02-06T17:25",
+                "raw": "06/02/26 17:25",
+                "value": "6,1",
+                "num": 6.1
+              },
+              {
+                "datetime": "2025-12-05T17:00",
+                "raw": "05/12/25 17:00",
+                "value": "6,5",
+                "num": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580622024",
+      "atendimento": "20941147",
+      "data": "05/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "HEMATÓCRITO, sangue total",
+      "pages": [
+        94,
+        95
+      ],
+      "blocks": [
+        {
+          "material": "Sangue Total",
+          "coleta": "05/08/2026 14:28:47",
+          "title": "HEMATÓCRITO, sangue total",
+          "title_lines": [
+            "HEMATÓCRITO, sangue total"
+          ],
+          "method": "Exame automatizado"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "05/08/2026 14:28:47",
+          "reference": null,
+          "line": "Data da coleta: 05/08/2026 14:28:47"
+        },
+        {
+          "name": null,
+          "value": "21,7 %",
+          "reference": "39,2 a 49,0 %",
+          "line": "21,7 %                             39,2 a 49,0 %"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 05/08/2026 às 14:29h - Liberado em: 05/08/2026 às 14:38h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DRA MARIA DE LOURDES L FERRARI CHAUFFAILLE - CRM 44281SP"
+      ],
+      "result_text": "HEMATÓCRITO, sangue total\nData da coleta: 05/08/2026 14:28:47\nHEMATÓCRITO, sangue total\nMétodo: Exame automatizado\nMasc: Maior ou igual a 18 anos\n21,7 %                             39,2 a 49,0 %\nNOTA: Os valores de referência para adultos são baseados em um\nestudo com 95 mil amostras de brasileiros saudáveis.",
+      "evolution": {
+        "title": "Hematocrito (Ht), sangue total Hematócrito",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Hematocrito (Ht), sangue total",
+              "Hematócrito"
+            ],
+            "reference": "39,2 a 49,0 %",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "21,7",
+                "num": 21.7
+              },
+              {
+                "datetime": "2026-06-08T17:25",
+                "raw": "08/06/26 17:25",
+                "value": "20",
+                "num": 20.0
+              },
+              {
+                "datetime": "2026-04-30T09:13",
+                "raw": "30/04/26 09:13",
+                "value": "19",
+                "num": 19.0
+              },
+              {
+                "datetime": "2026-03-06T17:11",
+                "raw": "06/03/26 17:11",
+                "value": "21,1",
+                "num": 21.1
+              },
+              {
+                "datetime": "2026-02-06T17:25",
+                "raw": "06/02/26 17:25",
+                "value": "18,7",
+                "num": 18.7
+              },
+              {
+                "datetime": "2025-12-05T17:00",
+                "raw": "05/12/25 17:00",
+                "value": "19,9",
+                "num": 19.9
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580622024",
+      "atendimento": "20941147",
+      "data": "05/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "GASOMETRIA ARTERIAL",
+      "pages": [
+        96,
+        97
+      ],
+      "blocks": [
+        {
+          "material": "Sangue Arterial",
+          "coleta": "05/08/2026 14:28:47",
+          "title": "GASOMETRIA ARTERIAL",
+          "title_lines": [
+            "GASOMETRIA ARTERIAL"
+          ],
+          "method": "Potenciometria/Amperometria/Espectrofotometria"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "05/08/2026 14:28:47",
+          "reference": null,
+          "line": "Data da coleta: 05/08/2026 14:28:47"
+        },
+        {
+          "name": "pH",
+          "value": "7,18",
+          "reference": "7,35 a   7,45",
+          "line": "pH   : 7,18                         7,35 a   7,45"
+        },
+        {
+          "name": "pO2",
+          "value": "167 mmHg",
+          "reference": "80    a 100 mmHg",
+          "line": "pO2  : 167 mmHg                    80    a 100 mmHg"
+        },
+        {
+          "name": "pCO2",
+          "value": "54 mmHg",
+          "reference": "35    a  45 mmHg",
+          "line": "pCO2 : 54 mmHg                     35    a  45 mmHg"
+        },
+        {
+          "name": "HCO3",
+          "value": "20 mmol/L",
+          "reference": "22    a  26 mmol/L",
+          "line": "HCO3 : 20 mmol/L                   22    a  26 mmol/L"
+        },
+        {
+          "name": "BE",
+          "value": "-7,8",
+          "reference": "-3,0  a  +3,0",
+          "line": "BE   : -7,8                        -3,0  a  +3,0"
+        },
+        {
+          "name": "SO2",
+          "value": "99 %",
+          "reference": "94    a 100 %",
+          "line": "SO2  : 99 %                        94    a 100 %"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 05/08/2026 às 14:29h - Liberado em: 05/08/2026 às 14:41h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "GASOMETRIA ARTERIAL\nData da coleta: 05/08/2026 14:28:47\nGASOMETRIA ARTERIAL\nMétodo: Potenciometria/Amperometria/Espectrofotometria\npH   : 7,18                         7,35 a   7,45\npO2  : 167 mmHg                    80    a 100 mmHg\npCO2 : 54 mmHg                     35    a  45 mmHg\nHCO3 : 20 mmol/L                   22    a  26 mmol/L\nBE   : -7,8                        -3,0  a  +3,0\nSO2  : 99 %                        94    a 100 %",
+      "evolution": {
+        "title": "Gasometria Arterial pH arterial",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Gasometria Arterial",
+              "pH arterial"
+            ],
+            "reference": "7,35 a 7,45",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "7,18",
+                "num": 7.18
+              },
+              {
+                "datetime": "2026-08-05T05:10",
+                "raw": "05/08/26 05:10",
+                "value": "7,25",
+                "num": 7.25
+              },
+              {
+                "datetime": "2026-08-05T00:52",
+                "raw": "05/08/26 00:52",
+                "value": "7,2",
+                "num": 7.2
+              },
+              {
+                "datetime": "2026-08-04T23:29",
+                "raw": "04/08/26 23:29",
+                "value": "7,2",
+                "num": 7.2
+              },
+              {
+                "datetime": "2026-08-04T22:37",
+                "raw": "04/08/26 22:37",
+                "value": "7,23",
+                "num": 7.23
+              },
+              {
+                "datetime": "2026-05-02T20:49",
+                "raw": "02/05/26 20:49",
+                "value": "7,34",
+                "num": 7.34
+              }
+            ]
+          },
+          {
+            "name": "pO2 arterial",
+            "name_lines": [
+              "pO2 arterial"
+            ],
+            "reference": "80 a 100 mmHg",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "167",
+                "num": 167.0
+              },
+              {
+                "datetime": "2026-08-05T05:10",
+                "raw": "05/08/26 05:10",
+                "value": "185",
+                "num": 185.0
+              },
+              {
+                "datetime": "2026-08-05T00:52",
+                "raw": "05/08/26 00:52",
+                "value": "188",
+                "num": 188.0
+              },
+              {
+                "datetime": "2026-08-04T23:29",
+                "raw": "04/08/26 23:29",
+                "value": "172",
+                "num": 172.0
+              },
+              {
+                "datetime": "2026-08-04T22:37",
+                "raw": "04/08/26 22:37",
+                "value": "174",
+                "num": 174.0
+              },
+              {
+                "datetime": "2026-05-02T20:49",
+                "raw": "02/05/26 20:49",
+                "value": "46",
+                "num": 46.0
+              }
+            ]
+          },
+          {
+            "name": "pCO2 arterial",
+            "name_lines": [
+              "pCO2 arterial"
+            ],
+            "reference": "35 a 45 mmHg",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "54",
+                "num": 54.0
+              },
+              {
+                "datetime": "2026-08-05T05:10",
+                "raw": "05/08/26 05:10",
+                "value": "48",
+                "num": 48.0
+              },
+              {
+                "datetime": "2026-08-05T00:52",
+                "raw": "05/08/26 00:52",
+                "value": "56",
+                "num": 56.0
+              },
+              {
+                "datetime": "2026-08-04T23:29",
+                "raw": "04/08/26 23:29",
+                "value": "56",
+                "num": 56.0
+              },
+              {
+                "datetime": "2026-08-04T22:37",
+                "raw": "04/08/26 22:37",
+                "value": "51",
+                "num": 51.0
+              },
+              {
+                "datetime": "2026-05-02T20:49",
+                "raw": "02/05/26 20:49",
+                "value": "49",
+                "num": 49.0
+              }
+            ]
+          },
+          {
+            "name": "HCO3 arterial",
+            "name_lines": [
+              "HCO3 arterial"
+            ],
+            "reference": "22 a 26 mmol/L",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "20",
+                "num": 20.0
+              },
+              {
+                "datetime": "2026-08-05T05:10",
+                "raw": "05/08/26 05:10",
+                "value": "21",
+                "num": 21.0
+              },
+              {
+                "datetime": "2026-08-05T00:52",
+                "raw": "05/08/26 00:52",
+                "value": "22",
+                "num": 22.0
+              },
+              {
+                "datetime": "2026-08-04T23:29",
+                "raw": "04/08/26 23:29",
+                "value": "22",
+                "num": 22.0
+              },
+              {
+                "datetime": "2026-08-04T22:37",
+                "raw": "04/08/26 22:37",
+                "value": "21",
+                "num": 21.0
+              },
+              {
+                "datetime": "2026-05-02T20:49",
+                "raw": "02/05/26 20:49",
+                "value": "26",
+                "num": 26.0
+              }
+            ]
+          },
+          {
+            "name": "BE arterial",
+            "name_lines": [
+              "BE arterial"
+            ],
+            "reference": "-3,0 a +3,0",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "-7,8",
+                "num": -7.8
+              },
+              {
+                "datetime": "2026-08-05T05:10",
+                "raw": "05/08/26 05:10",
+                "value": "-5,8",
+                "num": -5.8
+              },
+              {
+                "datetime": "2026-08-05T00:52",
+                "raw": "05/08/26 00:52",
+                "value": "-6",
+                "num": -6.0
+              },
+              {
+                "datetime": "2026-08-04T23:29",
+                "raw": "04/08/26 23:29",
+                "value": "-5,8",
+                "num": -5.8
+              },
+              {
+                "datetime": "2026-08-04T22:37",
+                "raw": "04/08/26 22:37",
+                "value": "-5,8",
+                "num": -5.8
+              },
+              {
+                "datetime": "2026-05-02T20:49",
+                "raw": "02/05/26 20:49",
+                "value": ",4",
+                "num": 0.4
+              }
+            ]
+          },
+          {
+            "name": "Sat O2 arterial",
+            "name_lines": [
+              "Sat O2 arterial"
+            ],
+            "reference": "94 a 100 %",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "99",
+                "num": 99.0
+              },
+              {
+                "datetime": "2026-08-05T05:10",
+                "raw": "05/08/26 05:10",
+                "value": "99",
+                "num": 99.0
+              },
+              {
+                "datetime": "2026-08-05T00:52",
+                "raw": "05/08/26 00:52",
+                "value": "99",
+                "num": 99.0
+              },
+              {
+                "datetime": "2026-08-04T23:29",
+                "raw": "04/08/26 23:29",
+                "value": "99",
+                "num": 99.0
+              },
+              {
+                "datetime": "2026-08-04T22:37",
+                "raw": "04/08/26 22:37",
+                "value": "99",
+                "num": 99.0
+              },
+              {
+                "datetime": "2026-05-02T20:49",
+                "raw": "02/05/26 20:49",
+                "value": "79",
+                "num": 79.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580622024",
+      "atendimento": "20941147",
+      "data": "05/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "FIBRINOGENIO, URGENTE, plasma",
+      "pages": [
+        98,
+        99
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "05/08/2026 14:28:47",
+          "title": "FIBRINOGENIO, URGENTE, plasma",
+          "title_lines": [
+            "FIBRINOGENIO, URGENTE, plasma"
+          ],
+          "method": "Coagulométrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "05/08/2026 14:28:47",
+          "reference": null,
+          "line": "Data da coleta: 05/08/2026 14:28:47"
+        },
+        {
+          "name": null,
+          "value": "231 mg/dL",
+          "reference": "200 a 400 mg/dL",
+          "line": "231 mg/dL                          200 a 400 mg/dL"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 05/08/2026 às 14:29h - Liberado em: 05/08/2026 às 15:07h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DRA MARIA CAROLINA TOSTES PINTAO - CRM 91813SP"
+      ],
+      "result_text": "FIBRINOGENIO, URGENTE, plasma\nData da coleta: 05/08/2026 14:28:47\nFIBRINOGENIO, URGENTE, plasma\nMétodo: Coagulométrico\n231 mg/dL                          200 a 400 mg/dL",
+      "evolution": {
+        "title": "Fibrinogênio, plasma Fibrinogenio",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Fibrinogênio, plasma",
+              "Fibrinogenio"
+            ],
+            "reference": "200 a 400 mg/dL",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "231",
+                "num": 231.0
+              },
+              {
+                "datetime": "2026-08-05T05:10",
+                "raw": "05/08/26 05:10",
+                "value": "227",
+                "num": 227.0
+              },
+              {
+                "datetime": "2026-08-05T00:52",
+                "raw": "05/08/26 00:52",
+                "value": "236",
+                "num": 236.0
+              },
+              {
+                "datetime": "2026-08-04T23:09",
+                "raw": "04/08/26 23:09",
+                "value": "227",
+                "num": 227.0
+              },
+              {
+                "datetime": "2026-08-04T19:55",
+                "raw": "04/08/26 19:55",
+                "value": "201",
+                "num": 201.0
+              },
+              {
+                "datetime": "2026-04-29T22:54",
+                "raw": "29/04/26 22:54",
+                "value": "273",
+                "num": 273.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580622024",
+      "atendimento": "20941147",
+      "data": "05/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "CÁLCIO IONIZADO, sangue venoso",
+      "pages": [
+        100,
+        101
+      ],
+      "blocks": [
+        {
+          "material": "Sangue Venoso",
+          "coleta": "05/08/2026 14:28:48",
+          "title": "CÁLCIO IONIZADO, sangue venoso",
+          "title_lines": [
+            "CÁLCIO IONIZADO, sangue venoso"
+          ],
+          "method": "Potenciométrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "05/08/2026 14:28:48",
+          "reference": null,
+          "line": "Data da coleta: 05/08/2026 14:28:48"
+        },
+        {
+          "name": null,
+          "value": "1,31 mmol/L",
+          "reference": "1,11 a 1,40 mmol/L",
+          "line": "1,31 mmol/L                       1,11 a 1,40 mmol/L"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 05/08/2026 às 14:29h - Liberado em: 05/08/2026 às 14:40h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "CÁLCIO IONIZADO, sangue venoso\nData da coleta: 05/08/2026 14:28:48\nCÁLCIO IONIZADO, sangue venoso\nMétodo: Potenciométrico\n1,31 mmol/L                       1,11 a 1,40 mmol/L",
+      "evolution": {
+        "title": "Calcio iônico, sangue total venoso Cálcio Ionizado, sangue",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Calcio iônico, sangue total venoso",
+              "Cálcio Ionizado,",
+              "sangue"
+            ],
+            "reference": "1,11 a 1,40 mmol/L",
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "1,31",
+                "num": 1.31
+              },
+              {
+                "datetime": "2026-08-05T05:10",
+                "raw": "05/08/26 05:10",
+                "value": "1,32",
+                "num": 1.32
+              },
+              {
+                "datetime": "2026-08-05T00:51",
+                "raw": "05/08/26 00:51",
+                "value": "1,32",
+                "num": 1.32
+              },
+              {
+                "datetime": "2026-08-04T19:55",
+                "raw": "04/08/26 19:55",
+                "value": "1,27",
+                "num": 1.27
+              },
+              {
+                "datetime": "2026-08-04T12:14",
+                "raw": "04/08/26 12:14",
+                "value": "1,29",
+                "num": 1.29
+              },
+              {
+                "datetime": "2026-08-03T21:49",
+                "raw": "03/08/26 21:49",
+                "value": "1,29",
+                "num": 1.29
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580622024",
+      "atendimento": "20941147",
+      "data": "05/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "ÁCIDO LÁCTICO, sangue arterial",
+      "pages": [
+        102,
+        103
+      ],
+      "blocks": [
+        {
+          "material": "Sangue Total",
+          "coleta": "05/08/2026 14:28:47",
+          "title": "ÁCIDO LÁCTICO, sangue arterial",
+          "title_lines": [
+            "ÁCIDO LÁCTICO, sangue arterial"
+          ],
+          "method": "Amperométrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "05/08/2026 14:28:47",
+          "reference": null,
+          "line": "Data da coleta: 05/08/2026 14:28:47"
+        },
+        {
+          "name": null,
+          "value": "11 mg/dL (1,22 mmol/L)",
+          "reference": "inferior a 11,3 mg/dL (inferior a 1,25 mmol/L)",
+          "line": "11 mg/dL (1,22 mmol/L)     inferior a 11,3 mg/dL (inferior a 1,25 mmol/L)"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 05/08/2026 às 14:29h - Liberado em: 05/08/2026 às 14:41h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "ÁCIDO LÁCTICO, sangue arterial\nData da coleta: 05/08/2026 14:28:47\nÁCIDO LÁCTICO, sangue arterial\nMétodo: Amperométrico\n11 mg/dL (1,22 mmol/L)     inferior a 11,3 mg/dL (inferior a 1,25 mmol/L)\n___________                             ______________________",
+      "evolution": {
+        "title": "Ácido láctico (Lactato), sangue total Lactato, arterial inferior a 11,3 mg/dL",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Ácido láctico (Lactato), sangue total",
+              "Lactato, arterial",
+              "inferior a 11,3 mg/dL"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-05T14:28",
+                "raw": "05/08/26 14:28",
+                "value": "11",
+                "num": 11.0
+              },
+              {
+                "datetime": "2026-08-05T05:10",
+                "raw": "05/08/26 05:10",
+                "value": "9",
+                "num": 9.0
+              },
+              {
+                "datetime": "2026-08-05T00:52",
+                "raw": "05/08/26 00:52",
+                "value": "9",
+                "num": 9.0
+              },
+              {
+                "datetime": "2026-08-04T23:29",
+                "raw": "04/08/26 23:29",
+                "value": "9",
+                "num": 9.0
+              },
+              {
+                "datetime": "2026-08-04T22:37",
+                "raw": "04/08/26 22:37",
+                "value": "11",
+                "num": 11.0
+              },
+              {
+                "datetime": "2026-05-02T20:49",
+                "raw": "02/05/26 20:49",
+                "value": "18",
+                "num": 18.0
               }
             ]
           }

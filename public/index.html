@@ -242,7 +242,7 @@ function unitOf(ref, fallback) {
     .replace(/\s{2,}/g, " ")
     .trim();
   if (!s || s.indexOf(" ") >= 0) return fallback || "";
-  return s;
+  return s === "g/dL" ? "g%" : s;
 }
 
 function fmtDT(dt) {
@@ -455,7 +455,7 @@ function hasActiveFilters() {
 function matchesGroup(g) {
   if (filters.setor && g.setor !== filters.setor) return false;
   var st = groupStatus(g);
-  if (filters.status && st !== filters.status && !(filters.status === "sem-ref" && st === "img")) return false;
+  if (filters.status && st !== filters.status) return false;
   if (filters.q && groupSearchText(g).indexOf(filters.q) < 0) return false;
   return true;
 }
@@ -713,7 +713,7 @@ function groupCardHtml(g, open) {
            : st === "normal" ? "ring-emerald-200"
            : "ring-slate-200";
   var html = '<details ' + (open ? "open " : "") + 'class="group rounded-2xl border border-slate-200 bg-white shadow-card ring-1 ring-inset ' + ring + '">' +
-    '<summary class="flex cursor-pointer items-center gap-3 px-4 py-3 select-none hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-500/40">' +
+    '<summary aria-expanded="' + (open ? "true" : "false") + '" class="flex cursor-pointer items-center gap-3 px-4 py-3 select-none hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-500/40">' +
       '<svg class="chev h-4 w-4 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">' +
         '<path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>' +
       setorChip(g) +
@@ -807,6 +807,12 @@ function renderAll() {
 
 function wireFilters() {
   var deb;
+  document.addEventListener("toggle", function (ev) {
+    if (ev.target && ev.target.tagName === "DETAILS") {
+      var s = ev.target.querySelector("summary");
+      if (s) s.setAttribute("aria-expanded", ev.target.open ? "true" : "false");
+    }
+  }, true);
   function collect() {
     filters.q = document.getElementById("busca").value.trim().toLowerCase();
     filters.setor = document.getElementById("f-setor").value;

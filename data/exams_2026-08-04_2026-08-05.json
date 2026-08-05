@@ -5,7 +5,7 @@
     "nasc": "14/10/1940"
   },
   "n_groups": 37,
-  "generated_at": "2026-08-05T16:41:44",
+  "generated_at": "2026-08-05T17:22:44",
   "groups": [
     {
       "kind": "lab",
@@ -1930,7 +1930,7 @@
             ]
           },
           {
-            "name": "[*] [*] [*] [*] Promielócitos (%)",
+            "name": "Promielócitos (%)",
             "name_lines": [
               "[*]",
               "[*]",
@@ -4910,7 +4910,7 @@
             ]
           },
           {
-            "name": "[*] [*] [*] [*] Promielócitos (%)",
+            "name": "Promielócitos (%)",
             "name_lines": [
               "[*]",
               "[*]",
@@ -5840,7 +5840,7 @@
             ]
           },
           {
-            "name": "[*] [*] pO2 arterial",
+            "name": "pO2 arterial",
             "name_lines": [
               "[*]",
               "[*]",
@@ -5875,7 +5875,7 @@
             ]
           },
           {
-            "name": "[*] [*] pCO2 arterial",
+            "name": "pCO2 arterial",
             "name_lines": [
               "[*]",
               "[*]",
@@ -5910,7 +5910,7 @@
             ]
           },
           {
-            "name": "[*] [*] HCO3 arterial",
+            "name": "HCO3 arterial",
             "name_lines": [
               "[*]",
               "[*]",
@@ -5945,7 +5945,7 @@
             ]
           },
           {
-            "name": "[*] [*] BE arterial",
+            "name": "BE arterial",
             "name_lines": [
               "[*]",
               "[*]",
@@ -5980,7 +5980,7 @@
             ]
           },
           {
-            "name": "[*] [*] Sat O2 arterial",
+            "name": "Sat O2 arterial",
             "name_lines": [
               "[*]",
               "[*]",
@@ -6703,7 +6703,7 @@
             ]
           },
           {
-            "name": "[*] pO2 arterial",
+            "name": "pO2 arterial",
             "name_lines": [
               "[*]",
               "pO2 arterial"
@@ -6743,7 +6743,7 @@
             ]
           },
           {
-            "name": "[*] pCO2 arterial",
+            "name": "pCO2 arterial",
             "name_lines": [
               "[*]",
               "pCO2 arterial"
@@ -6783,7 +6783,7 @@
             ]
           },
           {
-            "name": "[*] HCO3 arterial",
+            "name": "HCO3 arterial",
             "name_lines": [
               "[*]",
               "HCO3 arterial"
@@ -6823,7 +6823,7 @@
             ]
           },
           {
-            "name": "[*] BE arterial",
+            "name": "BE arterial",
             "name_lines": [
               "[*]",
               "BE arterial"
@@ -6863,7 +6863,7 @@
             ]
           },
           {
-            "name": "[*] Sat O2 arterial",
+            "name": "Sat O2 arterial",
             "name_lines": [
               "[*]",
               "Sat O2 arterial"

@@ -389,6 +389,10 @@ def iso_datetime(m: re.Match[str]) -> str:
     return f"20{yy}-{mm}-{dd}T{hh}:{mi}"
 
 
+def clean_name(name: str) -> str:
+    return " ".join(name.replace("[*]", " ").split())
+
+
 def parse_evolution(lines: TextLines) -> Record:
     series: list[Record] = []
     pending_name: list[str] = []
@@ -438,7 +442,7 @@ def parse_evolution(lines: TextLines) -> Record:
             continue
         pending_name.append(s)
         i += 1
-    title = " ".join(series[0]["name_lines"]).strip() if series else ""
+    title = clean_name(" ".join(series[0]["name_lines"])) if series else ""
     return {"title": title, "series": series}
 
 
@@ -560,8 +564,8 @@ def clean_lab_group(g: Record) -> Record:
             "series": [
                 {
                     "name": "" if (i == 0 and se["name_lines"]
-                                   and " ".join(se["name_lines"]) == evo["title"])
-                            else " ".join(se["name_lines"]).strip(),
+                                   and clean_name(" ".join(se["name_lines"])) == evo["title"])
+                            else clean_name(" ".join(se["name_lines"])),
                     "name_lines": se["name_lines"],
                     "reference": se["reference"],
                     "points": se["points"],
