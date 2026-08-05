@@ -40,6 +40,9 @@ jobs:
             echo "Nenhum PDF nesta versao; mantendo data/ ja commitado."
           fi
 
+      - name: Validar dados
+        run: python scripts/check_data.py
+
       - name: Preparar site (public/ + dados)
         run: |
           mkdir -p _site/data

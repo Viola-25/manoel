@@ -460,7 +460,8 @@ function matchesGroup(g) {
   return true;
 }
 
-function dayHasMatch(day) {
+function dayMatches(day) {
+  if (filters.dia && dayKey(fileDate(day)) !== filters.dia) return false;
   return day.groups.some(matchesGroup);
 }
 
@@ -516,7 +517,7 @@ function renderCronologia() {
     (manual[e.date] = manual[e.date] || []).push(e.text);
   });
   var firstArterial = true;
-  days.forEach(function (day, di) {
+  days.filter(dayMatches).forEach(function (day, di) {
     var date = fileDate(day);
     var dk = dayKey(date);
     var imgTitles = [], setores = {};
@@ -755,7 +756,7 @@ function groupCardHtml(g, open) {
 function renderDiaList() {
   var el = document.getElementById("dia-list");
   var out = [];
-  days.forEach(function (day, di) {
+  days.filter(dayMatches).forEach(function (day) {
     var date = fileDate(day);
     var groups = day.groups.filter(matchesGroup);
     if (!groups.length) return;
@@ -779,6 +780,7 @@ function renderContagem() {
   days.forEach(function (day) { total += day.groups.length; });
   var shown = 0;
   days.forEach(function (day) {
+    if (filters.dia && dayKey(fileDate(day)) !== filters.dia) return;
     day.groups.forEach(function (g) { if (matchesGroup(g)) shown++; });
   });
   var el = document.getElementById("contagem");
