@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boletim de saúde — Manoel</title>
+<style>
+:root{
+  --azul:#1f4e79; --azul2:#2e75b6; --fundo:#f2f5f8; --cartao:#fff;
+  --texto:#222; --mut:#667085; --borda:#dbe2ea;
+  --ok:#1a7f37; --alto:#c62828; --baixo:#1565c0; --neut:#8a6d1a;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,sans-serif;background:var(--fundo);color:var(--texto);line-height:1.5}
+header.topo{background:linear-gradient(135deg,var(--azul),var(--azul2));color:#fff;padding:22px 16px 18px}
+header.topo h1{margin:0 0 6px;font-size:1.35rem}
+.paciente{font-size:.95rem;opacity:.95}
+.paciente span{display:inline-block;margin-right:14px}
+main{max-width:960px;margin:0 auto;padding:16px}
+section{background:var(--cartao);border:1px solid var(--borda);border-radius:12px;padding:16px 18px;margin-bottom:18px}
+h2{margin:0 0 12px;font-size:1.05rem;color:var(--azul)}
+h3{margin:10px 0 6px;font-size:.95rem}
+.mut{color:var(--mut);font-size:.85rem}
+.tag{display:inline-block;background:#eef3fa;color:var(--azul);border-radius:999px;padding:2px 10px;font-size:.8rem;margin:2px 4px 2px 0}
+.tag.pronto{background:#fff3e0;color:#b26a00}
+.tag.internado{background:#e8f5ee;color:#14633c}
+.tag.img{background:#f1e8f9;color:#6a3fa0}
+.badge{display:inline-block;border-radius:999px;padding:1px 9px;font-size:.75rem;font-weight:600}
+.ok{background:#e6f4ea;color:var(--ok)}
+.high{background:#fdecea;color:var(--alto)}
+.low{background:#e8f0fe;color:var(--baixo)}
+.neut{background:#f7f3e0;color:var(--neut)}
+/* contexto */
+.ctx{border-left:4px solid var(--azul2);background:#f7faff;padding:10px 14px;border-radius:6px;font-size:.95rem}
+/* cronologia */
+.linha{position:relative;margin-left:8px;padding-left:22px}
+.linha::before{content:"";position:absolute;left:6px;top:4px;bottom:4px;width:2px;background:var(--borda)}
+.evento{position:relative;padding:0 0 18px}
+.evento::before{content:"";position:absolute;left:-24px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--azul2);border:2px solid #fff;box-shadow:0 0 0 2px var(--azul2)}
+.evento h3{margin:0 0 4px;font-size:.95rem;color:var(--azul)}
+.evento .dia{margin:0 0 6px}
+.evento ul{margin:4px 0 0;padding-left:18px}
+.evento li{margin:1px 0}
+.evento .vals{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.vchip{background:#f6f8fb;border:1px solid var(--borda);border-radius:8px;padding:3px 10px;font-size:.82rem}
+.vchip b{display:inline-block;min-width:14px}
+/* chave */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.card{border:1px solid var(--borda);border-radius:10px;padding:12px 14px;background:#fff}
+.card h3{margin:0 0 2px;font-size:.95rem}
+.card .val{font-size:1.5rem;font-weight:700}
+.card .val small{font-size:.85rem;font-weight:400;color:var(--mut)}
+.card .ref{font-size:.8rem;color:var(--mut);margin:2px 0 4px}
+.card svg{width:100%;height:36px;margin-top:6px}
+svg polyline{fill:none;stroke:var(--azul2);stroke-width:1.6}
+svg .reflo{stroke:#90caf9;stroke-width:1;stroke-dasharray:3 3}
+svg .refhi{stroke:#ef9a9a;stroke-width:1;stroke-dasharray:3 3}
+.card .delta{font-size:.8rem;margin-top:2px}
+/* grupos */
+.grupo{border:1px solid var(--borda);border-radius:10px;margin-bottom:12px;overflow:hidden}
+.grupo summary{cursor:pointer;padding:10px 14px;font-weight:600;font-size:.92rem;list-style:none}
+.grupo summary::-webkit-details-marker{display:none}
+.grupo summary::before{content:"▸ ";color:var(--azul2)}
+.grupo[open] summary::before{content:"▾ "}
+.grupo .corpo{padding:2px 14px 14px;border-top:1px solid var(--borda)}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:6px 0}
+th,td{text-align:left;padding:4px 8px;border-bottom:1px solid var(--borda);vertical-align:top}
+th{color:var(--mut);font-weight:600;font-size:.78rem;text-transform:uppercase;letter-spacing:.02em}
+.med-table td:first-child{font-weight:600;width:38%}
+.serie{margin-top:10px}
+.points{max-height:220px;overflow:auto}
+.serie-title{font-size:.82rem;color:var(--azul);font-weight:600}
+.note{background:#fff8e6;border:1px solid #f0e2b0;border-radius:8px;padding:8px 12px;font-size:.85rem;margin-top:10px}
+footer{max-width:960px;margin:0 auto;padding:10px 16px 30px;color:var(--mut);font-size:.8rem}
+.err{color:var(--alto);padding:12px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="topo">
+  <h1>Boletim diário de saúde</h1>
+  <div class="paciente">
+    <span><strong>Manoel Rodrigues de Oliveira</strong></span>
+    <span>Nasc. 14/10/1940</span>
+    <span id="atualizado"></span>
+  </div>
+</header>
+<main>
+  <section id="contexto"><h2>Contexto clínico</h2><div id="ctx"></div></section>
+  <section id="cronologia"><h2>Cronologia da internação</h2><div class="linha" id="linha"></div></section>
+  <section id="chave"><h2>Exames-chave</h2><div class="grid" id="chave-grid"></div></section>
+  <section id="por-dia"><h2>Todos os exames</h2><div id="dia-list"></div></section>
+</main>
+<footer id="rodape"></footer>
+<script>
+"use strict";
+
+var CLINICO = {
+  context: "Doença renal crônica dialítica e síndrome mielodisplásica. Durante a internação recebeu vários antibióticos (incluindo vancomicina e esquema para bactérias resistentes a carbapenêmicos). O quadro não evoluiu bem: seguiu instável, evoluiu com sangramento e foi submetido a esplenectomia em 04/08. Os exames abaixo são dos boletins laboratoriais e de imagem.",
+  events: [
+    { date: "04/08/2026", text: "Episódio de sangramento" },
+    { date: "04/08/2026", text: "Esplenectomia" }
+  ]
+};
+
+var KEYS = [
+  { label: "Hemoglobina", group: /^HEMOGRAMA/, series: "Hemoglobina" },
+  { label: "Leucócitos", group: /^HEMOGRAMA/, series: "Leucócitos" },
+  { label: "Plaquetas", group: /^HEMOGRAMA/, series: "Plaquetas" },
+  { label: "PCR", group: /C-REATIVA/, series: "", unit: "mg/dL", lo: 1.0, hi: 5.0,
+    autoConvert: { threshold: 50, factor: 0.1, dec: 1 },
+    note: "escala interpretativa: 1–5 mg/dL (10–50 mg/L) sugere infecção viral/bacteriana" },
+  { label: "Ureia", group: /^UREIA/, series: "" },
+  { label: "Creatinina", group: /^CREATININA/, series: "Creatinina" },
+  { label: "pH", group: /GASOMETRIA ARTERIAL/, series: "" },
+  { label: "pCO₂", group: /GASOMETRIA ARTERIAL/, series: "pCO2 arterial" },
+  { label: "HCO₃", group: /GASOMETRIA ARTERIAL/, series: "HCO3 arterial" },
+  { label: "BE", group: /GASOMETRIA ARTERIAL/, series: "BE arterial" },
+  { label: "pO₂", group: /GASOMETRIA ARTERIAL/, series: "pO2 arterial" }
+];
+
+function esc(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+  });
+}
+function parseNum(s) {
+  if (s == null) return null;
+  s = String(s).trim().replace("%", "");
+  if (!s || s === "[*]") return null;
+  var neg = false;
+  if (s[0] === "-") { neg = true; s = s.slice(1); }
+  else if (s[0] === "+") { s = s.slice(1); }
+  if (s[0] === "," || s[0] === ".") s = "0" + s;
+  s = s.replace(/\.(?=\d{3}(?:\.|$))/g, "").replace(",", ".");
+  var v = parseFloat(s);
+  return isNaN(v) ? null : (neg ? -v : v);
+}
+function parseRef(r) {
+  if (!r) return null;
+  var m = r.match(/([+-]?\d[\d.,]*)\s*(?:a|e)\s*([+-]?\d[\d.,]*)/);
+  if (m) return [parseNum(m[1]), parseNum(m[2])];
+  m = r.match(/At[eé]\s+(\d[\d.,]*)/);
+  if (m) return [null, parseNum(m[1])];
+  m = r.match(/(?:Superior a|Acima de)\s*(\d[\d.,]*)/);
+  if (m) return [parseNum(m[1]), null];
+  return null;
+}
+function unitOf(ref, fallback) {
+  if (!ref) return fallback || "";
+  var s = ref
+    .replace(/([+-]?\d[\d.,]*)\s*(?:a|e)\s*([+-]?\d[\d.,]*)/g, " ")
+    .replace(/At[eé]\s+\d[\d.,]*/g, " ")
+    .replace(/(?:Superior a|Acima de)\s*\d[\d.,]*/g, " ")
+    .replace(/Ver resultado tradicional.*/g, " ")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+  if (!s || s.indexOf(" ") >= 0) return fallback || "";
+  return s;
+}
+function fmtDT(dt) {
+  if (!dt) return "";
+  var m = String(dt).match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
+  if (!m) return dt;
+  return m[3] + "/" + m[2] + " " + m[4] + ":" + m[5];
+}
+function fmtDia(d) { // "05/08/2026" -> "05/08"
+  var m = String(d).match(/^(\d{2})\/(\d{2})\/(\d{4})/);
+  return m ? m[1] + "/" + m[2] : d;
+}
+function dayKey(d) { // "05/08/2026" -> "2026-08-05"
+  var m = String(d).match(/^(\d{2})\/(\d{2})\/(\d{4})/);
+  return m ? m[3] + "-" + m[2] + "-" + m[1] : null;
+}
+function badgeClass(v, ref) {
+  if (v == null || !ref) return "";
+  var lo = ref[0], hi = ref[1];
+  if (lo != null && v < lo) return "low";
+  if (hi != null && v > hi) return "high";
+  return "ok";
+}
+function findSeries(group, name) {
+  if (!group || !group.evolution || !group.evolution.series) return null;
+  for (var i = 0; i < group.evolution.series.length; i++) {
+    var s = group.evolution.series[i];
+    if (name === "" ? !s.name : s.name === name) return s;
+  }
+  return null;
+}
+function dayValue(group, key) {
+  var s = findSeries(group, key.series);
+  if (!s || !s.points || !s.points.length) return null;
+  var dk = dayKey(group.data);
+  var pts = s.points.filter(function (p) { return String(p.datetime).indexOf(dk) === 0; });
+  if (!pts.length) pts = s.points;
+  var last = pts[pts.length - 1];
+  return { s: s, point: last, ref: parseRef(s.reference), unit: unitOf(s.reference, key.unit) };
+}
+function sortPts(pts) {
+  return pts.slice().sort(function (a, b) {
+    return a.datetime < b.datetime ? -1 : (a.datetime > b.datetime ? 1 : 0);
+  });
+}
+function latestForKey(days, key) {
+  var best = null;
+  for (var i = 0; i < days.length; i++) {
+    for (var j = 0; j < days[i].groups.length; j++) {
+      var g = days[i].groups[j];
+      if (g.kind !== "lab" || !key.group.test(g.title)) continue;
+      var s = findSeries(g, key.series);
+      if (!s || !s.points || !s.points.length) continue;
+      var pts = sortPts(s.points);
+      var last = pts[pts.length - 1];
+      if (!best || last.datetime > best.last.datetime) {
+        best = { grp: g, s: s, points: pts, last: last,
+                 prev: pts.length > 1 ? pts[pts.length - 2] : null,
+                 ref: parseRef(s.reference), unit: unitOf(s.reference, key.unit) };
+      }
+    }
+  }
+  return best;
+}
+function fileDate(day) {
+  var best = null;
+  day.groups.forEach(function (g) {
+    if (!g.data) return;
+    var k = String(g.data).replace(/(\d{2})\/(\d{2})\/(\d{4})/, "$3$2$1");
+    if (!best || k > best.k) best = { k: k, d: g.data };
+  });
+  if (best) return best.d;
+  var m = (day.source || "").match(/(\d{4}-\d{2}-\d{2})_(\d{4}-\d{2}-\d{2})/);
+  return m ? m[2].split("-").reverse().join("/") : null;
+}
+function dayValueForDate(day, key, dk) {
+  var best = null;
+  for (var j = 0; j < day.groups.length; j++) {
+    var g = day.groups[j];
+    if (g.kind !== "lab" || !key.group.test(g.title)) continue;
+    var s = findSeries(g, key.series);
+    if (!s || !s.points || !s.points.length) continue;
+    var pts = s.points.filter(function (p) { return String(p.datetime).indexOf(dk) === 0; });
+    if (!pts.length) continue;
+    var last = sortPts(pts)[pts.length - 1];
+    if (!best || last.datetime > best.point.datetime) {
+      best = { s: s, point: last, ref: parseRef(s.reference), unit: unitOf(s.reference, key.unit) };
+    }
+  }
+  return best;
+}
+function sparkline(points, ref, w, h) {
+  var vals = [];
+  for (var i = 0; i < points.length; i++) if (points[i].num != null) vals.push(points[i].num);
+  vals = vals.slice(-8);
+  if (vals.length < 2) return "";
+  var min = Math.min.apply(null, vals), max = Math.max.apply(null, vals);
+  if (ref) {
+    if (ref[0] != null) min = Math.min(min, ref[0]);
+    if (ref[1] != null) max = Math.max(max, ref[1]);
+  }
+  var span = (max - min) || 1;
+  var X = function (i) { return i * (w - 2) / (vals.length - 1) + 1; };
+  var Y = function (v) { return h - 2 - (v - min) / span * (h - 4); };
+  var pts = [];
+  for (var k = 0; k < vals.length; k++) pts.push(X(k).toFixed(1) + "," + Y(vals[k]).toFixed(1));
+  var lines = "";
+  if (ref) {
+    if (ref[0] != null) lines += '<line class="reflo" x1="0" y1="' + Y(ref[0]) + '" x2="' + w + '" y2="' + Y(ref[0]) + '"/>';
+    if (ref[1] != null) lines += '<line class="refhi" x1="0" y1="' + Y(ref[1]) + '" x2="' + w + '" y2="' + Y(ref[1]) + '"/>';
+  }
+  var cx = X(vals.length - 1), cy = Y(vals[vals.length - 1]);
+  return '<svg width="' + w + '" height="' + h + '" viewBox="0 0 ' + w + " " + h + '">' + lines +
+         '<polyline points="' + pts.join(" ") + '"/><circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="2.5" fill="' + (ref && ref[1] != null && vals[vals.length-1] > ref[1] ? "#c62828" : "#1f4e79") + '"/></svg>';
+}
+function deltaHtml(last, prev) {
+  if (last == null || prev == null) return "";
+  var d = last - prev;
+  if (d === 0) return '<div class="delta mut">sem variação em relação ao anterior</div>';
+  var arrow = d > 0 ? "▲" : "▼";
+  var col = d > 0 ? "var(--alto)" : "var(--baixo)";
+  return '<div class="delta" style="color:' + col + '">' + arrow + " " + Math.abs(d).toLocaleString("pt-BR") + " vs. anterior</div>";
+}
+
+var days = [];
+var rendered = false;
+
+function renderContexto() {
+  document.getElementById("ctx").innerHTML = '<div class="ctx">' + esc(CLINICO.context) + "</div>";
+}
+function renderCronologia() {
+  var el = document.getElementById("linha");
+  var out = [];
+  var manual = {};
+  CLINICO.events.forEach(function (e) {
+    (manual[e.date] = manual[e.date] || []).push(e.text);
+  });
+  var firstArterial = true;
+  days.forEach(function (day, di) {
+    var date = fileDate(day);
+    var dk = dayKey(date);
+    var imgTitles = [], setores = {};
+    day.groups.forEach(function (g) {
+      if (g.kind === "img") { if (imgTitles.indexOf(g.title) < 0) imgTitles.push(g.title); }
+      else if (g.setor) setores[g.setor] = true;
+    });
+    var ev = [];
+    if (di === 0 && setores["Pronto socorro"]) ev.push({ t: "Atendimento no pronto-socorro", c: "pronto" });
+    if (setores["Internado"]) ev.push({ t: "Internado (UTI/Enfermaria)", c: "internado" });
+    var feats = [];
+    var dayKeys = {};
+    KEYS.forEach(function (k) {
+      var dv = dk ? dayValueForDate(day, k, dk) : null;
+      if (dv) dayKeys[k.label] = { key: k, dv: dv };
+    });
+    var arterial = day.groups.filter(function (g) { return g.kind === "lab" && /GASOMETRIA ARTERIAL/.test(g.title); }).length;
+    var hemocultura = day.groups.filter(function (g) { return /HEMOCULTURA/.test(g.title); }).length;
+    var culturo = day.groups.filter(function (g) { return /CULTURA/.test(g.title) && !/HEMOCULTURA/.test(g.title); }).length;
+    var vanco = day.groups.some(function (g) { return /^VANCOMICINA/.test(g.title); });
+    var tropo = day.groups.some(function (g) { return /TROPONINA/.test(g.title); });
+    var fibri = day.groups.some(function (g) { return /FIBRINOGENIO/.test(g.title); });
+    if (arterial) feats.push(firstArterial ? "primeira gasometria arterial" : "gasometria arterial");
+    if (hemocultura) feats.push(hemocultura + " hemoculturas");
+    if (culturo) feats.push("culturas (" + culturo + ")");
+    if (vanco) feats.push("nível de vancomicina (ATB)");
+    if (tropo) feats.push("troponina (avaliação cardíaca)");
+    if (fibri) feats.push("fibrinogênio (coagulação)");
+    if (arterial) firstArterial = false;
+
+    var html = '<div class="evento"><h3>' + (date ? fmtDia(date) : "Dia " + (di + 1)) + "</h3>";
+    var tags = ev.map(function (e) { return '<span class="tag ' + e.c + '">' + esc(e.t) + "</span>"; }).join("");
+    if (imgTitles.length) tags += imgTitles.map(function (t) { return '<span class="tag img">' + esc(t) + "</span>"; }).join("");
+    if (feats.length) tags += feats.map(function (f) { return '<span class="tag">' + esc(f) + "</span>"; }).join("");
+    html += '<div class="dia">' + tags + "</div>";
+    if (manual[date]) html += "<ul>" + manual[date].map(function (t) { return "<li><b>" + esc(t) + "</b></li>"; }).join("") + "</ul>";
+    if (Object.keys(dayKeys).length) {
+      html += '<div class="vals">';
+      Object.keys(dayKeys).forEach(function (lbl) {
+        var k = dayKeys[lbl].key, dv = dayKeys[lbl].dv;
+        var disp = dv.point.value, num = dv.point.num;
+        if (k.autoConvert && num != null && Math.abs(num) >= k.autoConvert.threshold) {
+          num = num * k.autoConvert.factor;
+          disp = num.toFixed(k.autoConvert.dec).replace(".", ",");
+        }
+        var cls = badgeClass(num, dv.ref) ||
+          (k.lo != null && num != null && num > k.hi ? "high" :
+           (k.lo != null && num != null && num < k.lo ? "low" : (num != null ? "ok" : "")));
+        html += '<span class="vchip"><b>' + esc(lbl) + ":</b> " + esc(disp) +
+                (k.unit ? " <small>" + esc(k.unit) + "</small>" : "") +
+                (cls ? ' <span class="badge ' + cls + '">' + cls + "</span>" : "") + "</span>";
+      });
+      html += "</div>";
+    }
+    out.push(html + "</div>");
+  });
+  el.innerHTML = out.join("");
+}
+function renderChave() {
+  var el = document.getElementById("chave-grid");
+  var out = [];
+  KEYS.forEach(function (k) {
+    var r = latestForKey(days, k);
+    if (!r) { out.push('<div class="card"><h3>' + esc(k.label) + '</h3><div class="mut">sem dados</div></div>'); return; }
+    var v = r.last.num, disp = r.last.value;
+    var prevNum = r.prev ? r.prev.num : null;
+    if (k.autoConvert && v != null && Math.abs(v) >= k.autoConvert.threshold) {
+      v = v * k.autoConvert.factor;
+      disp = v.toFixed(k.autoConvert.dec).replace(".", ",");
+      if (prevNum != null && Math.abs(prevNum) >= k.autoConvert.threshold) prevNum = prevNum * k.autoConvert.factor;
+    }
+    var cls = badgeClass(v, r.ref) || (k.lo != null && v != null && v > k.hi ? "high" : (k.lo != null && v != null && v < k.lo ? "low" : (v != null ? "ok" : "")));
+    var unit = k.unit || r.unit;
+    out.push('<div class="card"><h3>' + esc(k.label) + " " + (cls ? '<span class="badge ' + cls + '">' + cls + "</span>" : "") + "</h3>" +
+      '<div class="val">' + esc(disp) + (unit ? " <small>" + esc(unit) + "</small>" : "") + "</div>" +
+      '<div class="ref">' + (r.s.reference ? "Ref: " + esc(r.s.reference) : "") + (k.note ? " · " + esc(k.note) : "") + "</div>" +
+      sparkline(r.points, r.ref, 280, 40) +
+      deltaHtml(v, prevNum) +
+      '<div class="mut" style="font-size:.75rem;margin-top:2px">' + fmtDT(r.last.datetime) + "</div></div>");
+  });
+  el.innerHTML = out.join("");
+}
+function measuresHtml(measures) {
+  if (!measures || !measures.length) return "";
+  var rows = measures.map(function (m) {
+    return "<tr><td>" + esc(m.name || "&nbsp;") + "</td><td>" + esc(m.value) + "</td><td>" + esc(m.reference || "&nbsp;") + "</td></tr>";
+  }).join("");
+  return '<table class="med-table"><thead><tr><th>Parâmetro</th><th>Resultado</th><th>Referência</th></tr></thead><tbody>' + rows + "</tbody></table>";
+}
+function seriesHtml(evo) {
+  if (!evo || !evo.series || !evo.series.length) return "";
+  var out = "";
+  evo.series.forEach(function (s, si) {
+    if (!s.points || !s.points.length) return;
+    var name = s.name || evo.title || "Valores";
+    var rows = s.points.slice().reverse().map(function (p) {
+      var cls = badgeClass(p.num, parseRef(s.reference));
+      return "<tr><td>" + fmtDT(p.datetime) + "</td><td>" + esc(p.value) +
+        (cls ? ' <span class="badge ' + cls + '">' + cls + "</span>" : "") + "</td><td>" + esc(s.reference || "") + "</td></tr>";
+    }).join("");
+    out += '<div class="serie"><div class="serie-title">' + esc(name) + (si === 0 ? "" : "") + "</div>" +
+           '<div class="points"><table><thead><tr><th>Data</th><th>Valor</th><th>Referência</th></tr></thead><tbody>' + rows + "</tbody></table></div></div>";
+  });
+  return out;
+}
+function renderDiaList() {
+  var el = document.getElementById("dia-list");
+  var out = [];
+  days.forEach(function (day) {
+    var date = fileDate(day);
+    var m = (day.source || "").match(/(\d{4}-\d{2}-\d{2})_(\d{4}-\d{2}-\d{2})/);
+    out.push('<div style="margin-bottom:16px"><h3 style="color:var(--azul)">' + (date ? esc(date) : (m ? esc(m[1] + " a " + m[2]) : esc(day.source))) + "</h3>");
+    day.groups.forEach(function (g, gi) {
+      if (g.kind === "img") {
+        out.push('<details class="grupo" ' + (gi < 3 ? "open" : "") + '><summary><span class="tag img">Imagem</span> ' + esc(g.title) + "</summary>" +
+          '<div class="corpo"><div class="mut">' + (g.data ? "Data: " + esc(g.data) : "") + (g.medico ? " · Médico: " + esc(g.medico) : "") + "</div>" +
+          (g.text && g.text.length ? "<p style='white-space:pre-wrap;font-size:.88rem'>" + esc(g.text.join("\n")) + "</p>" : "") +
+          (g.responsavel && g.responsavel.length ? '<div class="mut" style="margin-top:6px">' + esc(g.responsavel.join(" · ")) + "</div>" : "") +
+          "</div></details>");
+      } else {
+        var blocos = g.blocks && g.blocks.length ? g.blocks.map(function (b) {
+          return "<div>" + (b.title ? "<b>" + esc(b.title) + "</b>" : "") +
+            (b.coleta ? " <span class='mut'>· coleta " + esc(b.coleta) + "</span>" : "") +
+            (b.method ? " <span class='mut'>· " + esc(b.method) + "</span>" : "") + "</div>";
+        }).join("") : "";
+        out.push('<details class="grupo"><summary><span class="tag">' + (g.setor === "Pronto socorro" ? "PS" : "Internado") + "</span> " +
+          esc(g.title || "(sem título)") + "</summary>" +
+          '<div class="corpo">' + blocos +
+          measuresHtml(g.measures) +
+          seriesHtml(g.evolution) +
+          "</div></details>");
+      }
+    });
+    out.push("</div>");
+  });
+  el.innerHTML = out.join("");
+}
+
+fetch("data/all_exams.json")
+  .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+  .then(function (data) {
+    days = data;
+    var gen = days.length ? days[days.length - 1].generated_at : null;
+    document.getElementById("atualizado").textContent = "Dados atualizados: " + (gen ? gen.replace("T", " ").slice(0, 16) : "—");
+    renderContexto();
+    renderCronologia();
+    renderChave();
+    renderDiaList();
+    document.getElementById("rodape").innerHTML =
+      "Fonte: boletins de exames (laboratório e imagem). Para atualizar: adicione o PDF do dia em <code>examesbruto/</code> e rode <code>python scripts/extract_exams.py</code>.";
+  })
+  .catch(function (e) {
+    document.getElementById("ctx").innerHTML = '<div class="err">Não foi possível carregar os dados: ' + esc(e.message) + "</div>";
+  });
+</script>
+</body>
+</html>

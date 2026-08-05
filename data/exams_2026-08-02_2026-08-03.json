@@ -1,0 +1,3390 @@
+{
+  "source": "exams_2026-08-02_2026-08-03.pdf",
+  "patient": {
+    "name": "Manoel Rodrigues de Oliveira",
+    "nasc": "14/10/1940"
+  },
+  "n_groups": 17,
+  "generated_at": "2026-08-05T14:45:54",
+  "groups": [
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621364",
+      "atendimento": "20941147",
+      "data": "01/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "BACILOS GRAM-NEGATIVOS RESISTENTES A CARBAPENÊMICOS, CULTURA",
+      "pages": [
+        0,
+        1
+      ],
+      "blocks": [
+        {
+          "material": "Swab Retal",
+          "coleta": "02/08/2026 03:05:37",
+          "title": "BACILOS GRAM-NEGATIVOS RESISTENTES A CARBAPENÊMICOS, CULTURA",
+          "title_lines": [
+            "BACILOS GRAM-NEGATIVOS RESISTENTES A CARBAPENÊMICOS, CULTURA"
+          ],
+          "method": "Cultivo em meio de cultura cromogênico seletivo"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 03:05:37",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 03:05:37"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 01/08/2026 às 22:55h - Liberado em: 03/08/2026 às 21:07h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR MATIAS CHIARASTELLI SALOMAO - CRM 150840SP"
+      ],
+      "result_text": "BACILOS GRAM-NEGATIVOS RESISTENTES A CARBAPENÊMICOS, CULTURA\nData da coleta: 02/08/2026 03:05:37\nBACILOS GRAM-NEGATIVOS RESISTENTES A CARBAPENÊMICOS, CULTURA\nMétodo: Cultivo em meio de cultura cromogênico seletivo\nMaterial : swab retal\nResultado:\nN E G A T I V A\nNota: Neste  exame  são  pesquisados  Enterobactérias,  Pseudomonas\naeruginosa  e  Acinetobacter  baumannii  resistentes  aos\ncarbapenemicos.\nVALOR DE REFERÊNCIA: Negativa",
+      "evolution": {
+        "title": "Cultura de vigilância para bacilos Bacilos Gram- negativos Resistente A Carbapenê",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Cultura de vigilância para bacilos",
+              "Bacilos Gram-",
+              "negativos Resistente",
+              "A Carbapenê"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-02T03:05",
+                "raw": "02/08/26 03:05",
+                "value": "NEGATIVO",
+                "num": null
+              },
+              {
+                "datetime": "2024-12-11T00:21",
+                "raw": "11/12/24 00:21",
+                "value": "NEGATIVO",
+                "num": null
+              }
+            ]
+          },
+          {
+            "name": "[*] [*] [*] [*] Parcial - Bacilos Gram-negativos Resistente A",
+            "name_lines": [
+              "[*]",
+              "[*]",
+              "[*]",
+              "[*]",
+              "Parcial - Bacilos",
+              "Gram-negativos",
+              "Resistente A"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-02T03:05",
+                "raw": "02/08/26 03:05",
+                "value": "Parcial Negativo",
+                "num": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "img",
+      "setor": "Imagem",
+      "data": "02/08/2026",
+      "medico": "Priscila Assuncao Castro Avelino",
+      "paciente": "Manoel Rodrigues de Oliveira",
+      "nasc": "14/10/1940",
+      "rg": "4289137",
+      "atendimento": "20941147",
+      "title": "ULTRASSONOGRAFIA DO ABDOME SUPERIOR COM DOPPLER COLORIDO DO SISTEMA PORTA",
+      "title_lines": [
+        "ULTRASSONOGRAFIA DO ABDOME SUPERIOR COM DOPPLER COLORIDO DO",
+        "SISTEMA PORTA"
+      ],
+      "text": [
+        "Análise:",
+        "Exame realizado à beira leito, limitado pelo posicionamento do paciente e por acentuada",
+        "interposição gasosa de alças intestinais.",
+        "Porções passíveis de avaliação do fígado tópico, com dimensões preservadas e atenuação",
+        "homogênea, apresentando contornos discretamente lobulados, podendo estar relacionado a",
+        "algum grau de hepatopatia crônica.",
+        "Veias porta e hepáticas sem alterações.",
+        "Vesícula biliar também de avaliação parcialmente limitada, normodistendida, espessura parietal",
+        "habitual das porções avaliadas.",
+        "Não há sinais de dilatação das vias biliares intra ou extra-hepáticas.",
+        "Porções identificadas do pâncreas de morfologia e ecogenicidade normais, sem dilatação do",
+        "ducto principal.",
+        "Baço de dimensões aumentadas, medindo 12 cm no eixo longitudinal, índice esplênico de 75,6",
+        "(valor de referência 60), com contornos regulares e ecogenicidade homogênea.",
+        "Não há evidência de líquido livre no abdome superior.",
+        "Veia esplênica pérvia, com fluxo em sentido habitual.",
+        "Veias portas principal, direita e esquerda pérvias, com fluxo em sentido habitual.",
+        "Calibre da veia porta de 1,2 cm e velocidade de 16 cm/s.",
+        "Veias hepáticas pérvias, com fasicidade preservada.",
+        "Artéria hepática pérvia, de avaliação limitada, porém exibindo doppler espectral habitual."
+      ],
+      "responsavel": [
+        "Dra.Vitória  Lima  Beltrão  Vieira  De  Melo",
+        "-  CRM:243706  -  SP"
+      ],
+      "pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621460",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "UREIA, plasma",
+      "pages": [
+        4,
+        5
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "02/08/2026 22:18:16",
+          "title": "UREIA, plasma",
+          "title_lines": [
+            "UREIA, plasma"
+          ],
+          "method": "Cinético, UV"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:18:16",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:18:16"
+        },
+        {
+          "name": null,
+          "value": "133 mg/dL",
+          "reference": "10 a 50 mg/dL",
+          "line": "133 mg/dL                          10 a 50 mg/dL"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:17h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "UREIA, plasma\nData da coleta: 02/08/2026 22:18:16\nUREIA, plasma\nMétodo: Cinético, UV\n133 mg/dL                          10 a 50 mg/dL",
+      "evolution": {
+        "title": "Uréia, plasma Uréia",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Uréia, plasma",
+              "Uréia"
+            ],
+            "reference": "10 a 50 mg/dL",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:18",
+                "raw": "02/08/26 22:18",
+                "value": "133",
+                "num": 133.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "114",
+                "num": 114.0
+              },
+              {
+                "datetime": "2026-08-01T09:36",
+                "raw": "01/08/26 09:36",
+                "value": "105",
+                "num": 105.0
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "124",
+                "num": 124.0
+              },
+              {
+                "datetime": "2026-06-08T17:25",
+                "raw": "08/06/26 17:25",
+                "value": "117",
+                "num": 117.0
+              },
+              {
+                "datetime": "2026-05-15T19:44",
+                "raw": "15/05/26 19:44",
+                "value": "128",
+                "num": 128.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621460",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "TEMPO DE TROMBOPLASTINA PARCIAL ATIVADA, URGENTE, plasma",
+      "pages": [
+        6,
+        7
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "02/08/2026 22:16:43",
+          "title": "TEMPO DE TROMBOPLASTINA PARCIAL ATIVADA, URGENTE, plasma",
+          "title_lines": [
+            "TEMPO DE TROMBOPLASTINA PARCIAL ATIVADA, URGENTE, plasma"
+          ],
+          "method": "Coagulométrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:16:43",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:16:43"
+        },
+        {
+          "name": "RESULTADO",
+          "value": "38,1 segundos",
+          "reference": null,
+          "line": "RESULTADO              : 38,1 segundos"
+        },
+        {
+          "name": "NORMAL DO DIA",
+          "value": "30,7 segundos",
+          "reference": null,
+          "line": "NORMAL DO DIA          : 30,7 segundos"
+        },
+        {
+          "name": "RELACAO PACIENTE/NORMAL",
+          "value": "1,24",
+          "reference": "0,91 a 1,20",
+          "line": "RELACAO PACIENTE/NORMAL: 1,24                       0,91 a 1,20"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:15h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DRA MARIA CAROLINA TOSTES PINTAO - CRM 91813SP"
+      ],
+      "result_text": "TEMPO DE TROMBOPLASTINA PARCIAL ATIVADA, URGENTE, plasma\nData da coleta: 02/08/2026 22:16:43\nTEMPO DE TROMBOPLASTINA PARCIAL ATIVADA, URGENTE, plasma\nMétodo: Coagulométrico\nVALORES DE REFERÊNCIA\nRESULTADO              : 38,1 segundos\nNORMAL DO DIA          : 30,7 segundos\nRELACAO PACIENTE/NORMAL: 1,24                       0,91 a 1,20",
+      "evolution": {
+        "title": "Tempo de Tromboplastina Parcial TTPA-Normal do dia",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Tempo de Tromboplastina Parcial",
+              "TTPA-Normal do dia"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-02T22:16",
+                "raw": "02/08/26 22:16",
+                "value": "30,7",
+                "num": 30.7
+              },
+              {
+                "datetime": "2026-08-01T20:47",
+                "raw": "01/08/26 20:47",
+                "value": "30,7",
+                "num": 30.7
+              },
+              {
+                "datetime": "2026-08-01T09:36",
+                "raw": "01/08/26 09:36",
+                "value": "30,7",
+                "num": 30.7
+              },
+              {
+                "datetime": "2026-05-21T21:07",
+                "raw": "21/05/26 21:07",
+                "value": "30,7",
+                "num": 30.7
+              },
+              {
+                "datetime": "2026-05-06T21:42",
+                "raw": "06/05/26 21:42",
+                "value": "30,7",
+                "num": 30.7
+              },
+              {
+                "datetime": "2026-05-04T21:28",
+                "raw": "04/05/26 21:28",
+                "value": "30,7",
+                "num": 30.7
+              }
+            ]
+          },
+          {
+            "name": "TTPA- Paciente/Normal",
+            "name_lines": [
+              "TTPA-",
+              "Paciente/Normal"
+            ],
+            "reference": "0,91 a 1,20",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:16",
+                "raw": "02/08/26 22:16",
+                "value": "1,24",
+                "num": 1.24
+              },
+              {
+                "datetime": "2026-08-01T20:47",
+                "raw": "01/08/26 20:47",
+                "value": "1,21",
+                "num": 1.21
+              },
+              {
+                "datetime": "2026-08-01T09:36",
+                "raw": "01/08/26 09:36",
+                "value": "1,02",
+                "num": 1.02
+              },
+              {
+                "datetime": "2026-05-21T21:07",
+                "raw": "21/05/26 21:07",
+                "value": "1,03",
+                "num": 1.03
+              },
+              {
+                "datetime": "2026-05-06T21:42",
+                "raw": "06/05/26 21:42",
+                "value": "1,01",
+                "num": 1.01
+              },
+              {
+                "datetime": "2026-05-04T21:28",
+                "raw": "04/05/26 21:28",
+                "value": "1,12",
+                "num": 1.12
+              }
+            ]
+          },
+          {
+            "name": "TTPA",
+            "name_lines": [
+              "TTPA"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-02T22:16",
+                "raw": "02/08/26 22:16",
+                "value": "38,1",
+                "num": 38.1
+              },
+              {
+                "datetime": "2026-08-01T20:47",
+                "raw": "01/08/26 20:47",
+                "value": "37",
+                "num": 37.0
+              },
+              {
+                "datetime": "2026-08-01T09:36",
+                "raw": "01/08/26 09:36",
+                "value": "31,2",
+                "num": 31.2
+              },
+              {
+                "datetime": "2026-05-21T21:07",
+                "raw": "21/05/26 21:07",
+                "value": "31,7",
+                "num": 31.7
+              },
+              {
+                "datetime": "2026-05-06T21:42",
+                "raw": "06/05/26 21:42",
+                "value": "31,1",
+                "num": 31.1
+              },
+              {
+                "datetime": "2026-05-04T21:28",
+                "raw": "04/05/26 21:28",
+                "value": "34,4",
+                "num": 34.4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621460",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "TEMPO DE PROTROMBINA, URGENTE, plasma",
+      "pages": [
+        8,
+        9
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "02/08/2026 22:16:43",
+          "title": "TEMPO DE PROTROMBINA, URGENTE, plasma",
+          "title_lines": [
+            "TEMPO DE PROTROMBINA, URGENTE, plasma"
+          ],
+          "method": "Coagulométrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:16:43",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:16:43"
+        },
+        {
+          "name": null,
+          "value": "16,4 segundos",
+          "reference": "10,1 a 12,8 segundos",
+          "line": "16,4 segundos                                10,1 a 12,8 segundos"
+        },
+        {
+          "name": "INR",
+          "value": "1,4",
+          "reference": "0,9 a 1,1",
+          "line": "INR: 1,4                                     0,9 a 1,1"
+        },
+        {
+          "name": "NORMAL DO DIA",
+          "value": "11,5 segundos",
+          "reference": null,
+          "line": "NORMAL DO DIA: 11,5 segundos"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:15h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DRA MARIA CAROLINA TOSTES PINTAO - CRM 91813SP"
+      ],
+      "result_text": "TEMPO DE PROTROMBINA, URGENTE, plasma\nData da coleta: 02/08/2026 22:16:43\nTEMPO DE PROTROMBINA, URGENTE, plasma\nMétodo: Coagulométrico\n16,4 segundos                                10,1 a 12,8 segundos\nINR: 1,4                                     0,9 a 1,1\nNORMAL DO DIA: 11,5 segundos\nISI (Índice de Sensibilidade Internacional) da tromboplastina: 1,03\nOBS.: O  uso  de  anticoagulantes pode estar relacionado ao prolongamento\ndos  tempos  de  coagulação.  Na  ausência  destas medicações, esta\nalteração  sugere  deficiência  congênita  de fatores ou inibidores\nadquiridos da coagulação.\nColocamos o serviço de assessoria médica do setor de Hemostasia à\ndisposição, para prestar maiores esclarecimentos.\nNOTA(1): Recomenda-se  o  uso  do  INR  (International Normalized Ratio)\npara  monitorização  de  paciente  em  anticoagulação  oral com\nantagonistas  de  vitamina  K  (AVKs). Para as demais situações\nclínicas,  sugere-se  o acompanhamento dos resultados expressos\nem segundos.\nNOTA(2): Para a maior parte das indicações de anticoagulação com AVKs,\no intervalo terapêutico recomendado do INR é de 2,0 a 3,0.",
+      "evolution": {
+        "title": "Tempo de protrombina (INR), plasma Tempo de Protrombina",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Tempo de protrombina (INR), plasma",
+              "Tempo de",
+              "Protrombina"
+            ],
+            "reference": "10,1 a 12,8 segundos",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:16",
+                "raw": "02/08/26 22:16",
+                "value": "16,4",
+                "num": 16.4
+              },
+              {
+                "datetime": "2026-08-01T20:47",
+                "raw": "01/08/26 20:47",
+                "value": "14,2",
+                "num": 14.2
+              },
+              {
+                "datetime": "2026-08-01T09:36",
+                "raw": "01/08/26 09:36",
+                "value": "13,3",
+                "num": 13.3
+              },
+              {
+                "datetime": "2026-05-21T21:07",
+                "raw": "21/05/26 21:07",
+                "value": "12,1",
+                "num": 12.1
+              },
+              {
+                "datetime": "2026-05-06T21:42",
+                "raw": "06/05/26 21:42",
+                "value": "12,3",
+                "num": 12.3
+              },
+              {
+                "datetime": "2026-05-04T21:28",
+                "raw": "04/05/26 21:28",
+                "value": "12,6",
+                "num": 12.6
+              }
+            ]
+          },
+          {
+            "name": "TP/INR",
+            "name_lines": [
+              "TP/INR"
+            ],
+            "reference": "0,9 a 1,1",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:16",
+                "raw": "02/08/26 22:16",
+                "value": "1,4",
+                "num": 1.4
+              },
+              {
+                "datetime": "2026-08-01T20:47",
+                "raw": "01/08/26 20:47",
+                "value": "1,2",
+                "num": 1.2
+              },
+              {
+                "datetime": "2026-08-01T09:36",
+                "raw": "01/08/26 09:36",
+                "value": "1,2",
+                "num": 1.2
+              },
+              {
+                "datetime": "2026-05-21T21:07",
+                "raw": "21/05/26 21:07",
+                "value": "1,1",
+                "num": 1.1
+              },
+              {
+                "datetime": "2026-05-06T21:42",
+                "raw": "06/05/26 21:42",
+                "value": "1,1",
+                "num": 1.1
+              },
+              {
+                "datetime": "2026-05-04T21:28",
+                "raw": "04/05/26 21:28",
+                "value": "1,1",
+                "num": 1.1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621460",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "SODIO, plasma",
+      "pages": [
+        10,
+        11
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "02/08/2026 22:16:43",
+          "title": "SODIO, plasma",
+          "title_lines": [
+            "SODIO, plasma"
+          ],
+          "method": "Potenciométrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:16:43",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:16:43"
+        },
+        {
+          "name": null,
+          "value": "134 mEq/L",
+          "reference": "136 a 145 mEq/L",
+          "line": "134 mEq/L                          136 a 145 mEq/L"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:15h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "SODIO, plasma\nData da coleta: 02/08/2026 22:16:43\nSODIO, plasma\nMétodo: Potenciométrico\n134 mEq/L                          136 a 145 mEq/L",
+      "evolution": {
+        "title": "Sódio, plasma Sódio",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Sódio, plasma",
+              "Sódio"
+            ],
+            "reference": "136 a 145 mEq/L",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:16",
+                "raw": "02/08/26 22:16",
+                "value": "134",
+                "num": 134.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "135",
+                "num": 135.0
+              },
+              {
+                "datetime": "2026-08-01T09:36",
+                "raw": "01/08/26 09:36",
+                "value": "136",
+                "num": 136.0
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "136",
+                "num": 136.0
+              },
+              {
+                "datetime": "2026-06-08T17:25",
+                "raw": "08/06/26 17:25",
+                "value": "137",
+                "num": 137.0
+              },
+              {
+                "datetime": "2026-05-15T19:44",
+                "raw": "15/05/26 19:44",
+                "value": "139",
+                "num": 139.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621460",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "PROTEINA C-REATIVA, plasma",
+      "pages": [
+        12,
+        13,
+        14
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "02/08/2026 22:18:16",
+          "title": "PROTEINA C-REATIVA, plasma",
+          "title_lines": [
+            "PROTEINA C-REATIVA, plasma"
+          ],
+          "method": "Imunoturbidimetria ultrassensível"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:18:16",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:18:16"
+        },
+        {
+          "name": null,
+          "value": "11,62 mg/dL",
+          "reference": "Como indicador de processos infecciosos",
+          "line": "11,62 mg/dL                Como indicador de processos infecciosos"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:17h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "PROTEINA C-REATIVA, plasma\nData da coleta: 02/08/2026 22:18:16\nPROTEINA C-REATIVA, plasma\nMétodo: Imunoturbidimetria ultrassensível\n11,62 mg/dL                Como indicador de processos infecciosos\n(116,20 mg/L)              ou inflamatórios:\nDe 1,00 a 5,00 mg/dL (10,00 a 50,00 mg/L):\ninfecções virais e processos\ninflamatórios leves\nDe 5,10 a 20,00 mg/dL (51,00 a 200,00 mg/L):\ninfecções bacterianas e processos\ninflamatórios sistêmicos\nAcima de 20,00 mg/dL (acima de 200,00 mg/L):\ninfecções graves, grandes queimados e\npolitraumatismo\nComo fator agravante do risco cardiovascular:\nquando maior ou igual a 0,20 mg/dL\n(maior ou igual a 2,00 mg/L)\nNOTA 1:\n- Este laudo contempla os resultados nas concentrações mg/dL e mg/L.\nNOTA 2:\nInterpretação como indicador de processos infecciosos ou inflamatórios:\n- Resultados  de  PCR  acima  de  1,00  mg/dL  (10,00  mg/L)  devem  ser\ninterpretados  como  indicativos  de  possível  processo  infeccioso ou\ninflamatório.\n- Os  valores  de  PCR descritos, para avaliação de processos infecciosos\nou  inflamatórios  são  simples  referência.  O  resultado  deve  ser\ninterpretado a luz da história clínica e do exame clínico.\nInterpretação como indicador de risco cardiovascular:\n- A  interpretação  dos  valores  somente  é  aplicável  quando excluídas\ncausas  inflamatórias,  infecciosas  ou  imunes  de  elevação  da  PCR\nultrassensível.\nReferência: Diretriz Brasileira de Dislipidemias e Prevenção da\nAterosclerose - 2025, Sociedade Brasileira de Cardiologia.\nNOTA 3:\n- Mudança nos valores de referência desde 28/11/2025.",
+      "evolution": {
+        "title": "Proteína C Reativa, plasma Proteína C-Reativa (mg/L)",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Proteína C Reativa, plasma",
+              "Proteína C-Reativa",
+              "(mg/L)"
+            ],
+            "reference": "Ver resultado tradicional",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:18",
+                "raw": "02/08/26 22:18",
+                "value": "116,2",
+                "num": 116.2
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "97,4",
+                "num": 97.4
+              },
+              {
+                "datetime": "2026-08-01T09:36",
+                "raw": "01/08/26 09:36",
+                "value": "19,2",
+                "num": 19.2
+              },
+              {
+                "datetime": "2026-06-08T17:25",
+                "raw": "08/06/26 17:25",
+                "value": "5,6",
+                "num": 5.6
+              },
+              {
+                "datetime": "2026-05-07T21:37",
+                "raw": "07/05/26 21:37",
+                "value": "18,8",
+                "num": 18.8
+              },
+              {
+                "datetime": "2026-05-06T21:42",
+                "raw": "06/05/26 21:42",
+                "value": "22",
+                "num": 22.0
+              }
+            ]
+          },
+          {
+            "name": "Proteína C-Reativa",
+            "name_lines": [
+              "Proteína C-Reativa"
+            ],
+            "reference": "Ver resultado tradicional",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:18",
+                "raw": "02/08/26 22:18",
+                "value": "11,62",
+                "num": 11.62
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "9,74",
+                "num": 9.74
+              },
+              {
+                "datetime": "2026-08-01T09:36",
+                "raw": "01/08/26 09:36",
+                "value": "1,92",
+                "num": 1.92
+              },
+              {
+                "datetime": "2026-06-08T17:25",
+                "raw": "08/06/26 17:25",
+                "value": ",56",
+                "num": 0.56
+              },
+              {
+                "datetime": "2026-05-07T21:37",
+                "raw": "07/05/26 21:37",
+                "value": "1,88",
+                "num": 1.88
+              },
+              {
+                "datetime": "2026-05-06T21:42",
+                "raw": "06/05/26 21:42",
+                "value": "2,2",
+                "num": 2.2
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621460",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "POTASSIO, plasma",
+      "pages": [
+        15,
+        16
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "02/08/2026 22:16:43",
+          "title": "POTASSIO, plasma",
+          "title_lines": [
+            "POTASSIO, plasma"
+          ],
+          "method": "Potenciométrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:16:43",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:16:43"
+        },
+        {
+          "name": null,
+          "value": "4,7 mEq/L",
+          "reference": "A partir de 1 ano: 3,5 a 4,5 mEq/L",
+          "line": "4,7 mEq/L                          A partir de 1 ano: 3,5 a 4,5 mEq/L"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:15h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "POTASSIO, plasma\nData da coleta: 02/08/2026 22:16:43\nPOTASSIO, plasma\nMétodo: Potenciométrico\n4,7 mEq/L                          A partir de 1 ano: 3,5 a 4,5 mEq/L",
+      "evolution": {
+        "title": "Potássio, plasma Potássio - plasma",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Potássio, plasma",
+              "Potássio - plasma"
+            ],
+            "reference": "3,5 a 4,5 mEq/L",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:16",
+                "raw": "02/08/26 22:16",
+                "value": "4,7",
+                "num": 4.7
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "4,8",
+                "num": 4.8
+              },
+              {
+                "datetime": "2026-08-01T09:36",
+                "raw": "01/08/26 09:36",
+                "value": "4,1",
+                "num": 4.1
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "4,5",
+                "num": 4.5
+              },
+              {
+                "datetime": "2026-06-08T17:25",
+                "raw": "08/06/26 17:25",
+                "value": "4,4",
+                "num": 4.4
+              },
+              {
+                "datetime": "2026-05-15T19:44",
+                "raw": "15/05/26 19:44",
+                "value": "4,5",
+                "num": 4.5
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621460",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "MAGNESIO, plasma",
+      "pages": [
+        17,
+        18
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "02/08/2026 22:22:45",
+          "title": "MAGNESIO, plasma",
+          "title_lines": [
+            "MAGNESIO, plasma"
+          ],
+          "method": "Colorimétrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:22:45",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:22:45"
+        },
+        {
+          "name": null,
+          "value": "1,9 mg/dL",
+          "reference": "Acima de 20 anos : 1,6 a 2,6 mg/dL",
+          "line": "1,9 mg/dL                          Acima de 20 anos : 1,6 a 2,6 mg/dL"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:17h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "MAGNESIO, plasma\nData da coleta: 02/08/2026 22:22:45\nMAGNESIO, plasma\nMétodo: Colorimétrico\n1,9 mg/dL                          Acima de 20 anos : 1,6 a 2,6 mg/dL",
+      "evolution": {
+        "title": "Magnésio, plasma Magnésio",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Magnésio, plasma",
+              "Magnésio"
+            ],
+            "reference": "1,6 a 2,6 mg/dL",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:22",
+                "raw": "02/08/26 22:22",
+                "value": "1,9",
+                "num": 1.9
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "1,4",
+                "num": 1.4
+              },
+              {
+                "datetime": "2026-05-07T21:37",
+                "raw": "07/05/26 21:37",
+                "value": "1,7",
+                "num": 1.7
+              },
+              {
+                "datetime": "2026-05-06T21:42",
+                "raw": "06/05/26 21:42",
+                "value": "1,8",
+                "num": 1.8
+              },
+              {
+                "datetime": "2026-05-04T21:28",
+                "raw": "04/05/26 21:28",
+                "value": "1,9",
+                "num": 1.9
+              },
+              {
+                "datetime": "2026-05-03T21:29",
+                "raw": "03/05/26 21:29",
+                "value": "2,1",
+                "num": 2.1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621460",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "HEMOGRAMA, sangue total",
+      "pages": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "blocks": [
+        {
+          "material": "Sangue Total",
+          "coleta": "02/08/2026 22:45:13",
+          "title": "HEMOGRAMA, sangue total",
+          "title_lines": [
+            "HEMOGRAMA, sangue total",
+            "VALORES DE REFERÊNCIA",
+            "RESULTADO                               Masc: Maior ou igual a 18 anos",
+            "------------------------------------------------------------------------"
+          ],
+          "method": null
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:45:13",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:45:13"
+        },
+        {
+          "name": "ERITRÓCITOS",
+          "value": "2,64 milhões/mm3",
+          "reference": "4,32 a 5,67",
+          "line": "ERITRÓCITOS                   :   2,64 milhões/mm3        4,32 a 5,67"
+        },
+        {
+          "name": "HEMOGLOBINA",
+          "value": "7,5",
+          "reference": "g/dL               13,3 a 16,5",
+          "line": "HEMOGLOBINA                   :   7,5  g/dL               13,3 a 16,5"
+        },
+        {
+          "name": "HEMATÓCRITO",
+          "value": "20,9",
+          "reference": "%                  39,2 a 49,0",
+          "line": "HEMATÓCRITO                   :  20,9  %                  39,2 a 49,0"
+        },
+        {
+          "name": "HEMOGLOBINA CORPUSCULAR MÉDIA",
+          "value": "28,4",
+          "reference": "pg                 27,7 a 32,7",
+          "line": "HEMOGLOBINA CORPUSCULAR MÉDIA :  28,4  pg                 27,7 a 32,7"
+        },
+        {
+          "name": "VOLUME CORPUSCULAR MÉDIO",
+          "value": "79,2",
+          "reference": "fL                 81,7 a 95,3",
+          "line": "VOLUME CORPUSCULAR MÉDIO      :  79,2  fL                 81,7 a 95,3"
+        },
+        {
+          "name": "CONCENTRAÇÃO DE HEMOGLOBINA CORPUSCULAR MÉDIA",
+          "value": "35,9",
+          "reference": "g/dL               32,4 a 36,0",
+          "line": "CONCENTRAÇÃO DE HEMOGLOBINA CORPUSCULAR MÉDIA:  35,9  g/dL               32,4 a 36,0"
+        },
+        {
+          "name": "COEFICIENTE DE VARIAÇÃO DO VOLUME ERITROCITÁRIO (RDW)",
+          "value": "16,5",
+          "reference": "%                  11,8 a 14,1",
+          "line": "COEFICIENTE DE VARIAÇÃO DO VOLUME ERITROCITÁRIO (RDW):  16,5  %                  11,8 a 14,1"
+        },
+        {
+          "name": "Neutrófilos",
+          "value": "76,7",
+          "reference": "11.860               1.590 a 4.770",
+          "line": "Neutrófilos     :  76,7   11.860               1.590 a 4.770"
+        },
+        {
+          "name": "Mielócitos",
+          "value": "4,0",
+          "reference": "620                     0",
+          "line": "Mielócitos    :   4,0      620                     0"
+        },
+        {
+          "name": "Metamielócitos",
+          "value": "5,0",
+          "reference": "770                     0",
+          "line": "Metamielócitos:   5,0      770                     0"
+        },
+        {
+          "name": "Bastonetes",
+          "value": "6,0",
+          "reference": "930               Até 812",
+          "line": "Bastonetes    :   6,0      930               Até 812"
+        },
+        {
+          "name": "Segmentados",
+          "value": "61,7",
+          "reference": "9.540               1.590 a 4.770",
+          "line": "Segmentados   :  61,7    9.540               1.590 a 4.770"
+        },
+        {
+          "name": "Eosinófilos",
+          "value": "1,0",
+          "reference": "150               34 a 420",
+          "line": "Eosinófilos     :   1,0      150               34 a 420"
+        },
+        {
+          "name": "Basófilos",
+          "value": "0,3",
+          "reference": "50               10 a 80",
+          "line": "Basófilos       :   0,3       50               10 a 80"
+        },
+        {
+          "name": "Linfócitos",
+          "value": "5,0",
+          "reference": "770               1.120 a 2.950",
+          "line": "Linfócitos      :   5,0      770               1.120 a 2.950"
+        },
+        {
+          "name": "Monócitos",
+          "value": "17,0",
+          "reference": "2.630               260 a 730",
+          "line": "Monócitos       :  17,0    2.630               260 a 730"
+        },
+        {
+          "name": "TOTAL DE PLAQUETAS",
+          "value": "35.000/mm3",
+          "reference": "151.000 a 304.000/mm3",
+          "line": "TOTAL DE PLAQUETAS: 35.000/mm3                   151.000 a 304.000/mm3"
+        },
+        {
+          "name": "TRINTA E CINCO MIL VOLUME PLAQUETÁRIO MÉDIO",
+          "value": "11,2 fL",
+          "reference": "9,2 a 12,6 fL",
+          "line": "TRINTA E CINCO MIL VOLUME PLAQUETÁRIO MÉDIO: 11,2 fL                    9,2 a 12,6 fL"
+        },
+        {
+          "name": "FRAÇÃO IMATURA DE PLAQUETAS",
+          "value": "12,2 %",
+          "reference": "1,1 a 6,8 %",
+          "line": "FRAÇÃO IMATURA DE PLAQUETAS: 12,2 %                  1,1 a 6,8 %"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:43h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DRA MARIA DE LOURDES L FERRARI CHAUFFAILLE - CRM 44281SP"
+      ],
+      "result_text": "HEMOGRAMA, sangue total\nVALORES DE REFERÊNCIA\nRESULTADO                               Masc: Maior ou igual a 18 anos\n------------------------------------------------------------------------\nData da coleta: 02/08/2026 22:45:13\nHEMOGRAMA, sangue total\nVALORES DE REFERÊNCIA\nRESULTADO                               Masc: Maior ou igual a 18 anos\n------------------------------------------------------------------------\nERITRÓCITOS                   :   2,64 milhões/mm3        4,32 a 5,67\nHEMOGLOBINA                   :   7,5  g/dL               13,3 a 16,5\nHEMATÓCRITO                   :  20,9  %                  39,2 a 49,0\nHEMOGLOBINA CORPUSCULAR MÉDIA :  28,4  pg                 27,7 a 32,7\nVOLUME CORPUSCULAR MÉDIO      :  79,2  fL                 81,7 a 95,3\nCONCENTRAÇÃO DE HEMOGLOBINA\nCORPUSCULAR MÉDIA:  35,9  g/dL               32,4 a 36,0\nCOEFICIENTE DE VARIAÇÃO DO\nVOLUME ERITROCITÁRIO (RDW):  16,5  %                  11,8 a 14,1\n------------------------------------------------------  ----------------\nCARACTERES MORFOLÓGICOS:\npoiquilocitose moderada; raros esquizócitos; raras hemácias em\nalvo; policromasia discreta\nSÉRIE BRANCA    ========================================================\nVALORES DE REFERÊNCIA\nRESULTADO                              Masc: Maior ou igual a 18 anos\n%      /mm3                    /mm3\n--------------------------------------------  ---------------------\nLEUCÓCITOS                   15.470               3.650 a 8.120\nNeutrófilos     :  76,7   11.860               1.590 a 4.770\nMielócitos    :   4,0      620                     0\nMetamielócitos:   5,0      770                     0\nBastonetes    :   6,0      930               Até 812\nSegmentados   :  61,7    9.540               1.590 a 4.770\nEosinófilos     :   1,0      150               34 a 420\nBasófilos       :   0,3       50               10 a 80\nLinfócitos      :   5,0      770               1.120 a 2.950\nMonócitos       :  17,0    2.630               260 a 730\n--------------------------------------------  ---------------------\nCARACTERES MORFOLÓGICOS:\nalguns neutrófilos hipogranulares; raros neutrófilos com\npseudoanomalia de Pelger- Huet\nPLAQUETAS    ===========================================================\nVALORES DE REFERÊNCIA\nRESULTADO                               Masc: Maior ou igual a 18 anos\nTOTAL DE PLAQUETAS: 35.000/mm3                   151.000 a 304.000/mm3\nTRINTA E CINCO MIL\nVOLUME PLAQUETÁRIO MÉDIO: 11,2 fL                    9,2 a 12,6 fL\nFRAÇÃO IMATURA DE PLAQUETAS: 12,2 %                  1,1 a 6,8 %\nNOTA(1): Os valores de referência para adultos são baseados em um\nestudo com 95 mil amostras de brasileiros saudáveis.\nNOTA(2): Exame  automatizado  por  citometria  de  fluxo  fluorescente e\nimpedância,  com  confirmação  das  contagens  e  análise\nmorfológica realizadas por microscopia, quando aplicável.",
+      "evolution": {
+        "title": "Hemograma completo, sangue total Eritrócitos",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Hemograma completo, sangue total",
+              "Eritrócitos"
+            ],
+            "reference": "4,32 a 5,67 milhões/mm3",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "2,64",
+                "num": 2.64
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "2,77",
+                "num": 2.77
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "3,29",
+                "num": 3.29
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "2,44",
+                "num": 2.44
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "2,79",
+                "num": 2.79
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "2,42",
+                "num": 2.42
+              }
+            ]
+          },
+          {
+            "name": "Hemoglobina",
+            "name_lines": [
+              "Hemoglobina"
+            ],
+            "reference": "13,3 a 16,5 g/dL",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "7,5",
+                "num": 7.5
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "7,8",
+                "num": 7.8
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "9,1",
+                "num": 9.1
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "6,7",
+                "num": 6.7
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "7,9",
+                "num": 7.9
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "6,6",
+                "num": 6.6
+              }
+            ]
+          },
+          {
+            "name": "Hematócrito",
+            "name_lines": [
+              "Hematócrito"
+            ],
+            "reference": "39,2 a 49,0 %",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "20,9",
+                "num": 20.9
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "22",
+                "num": 22.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "25,9",
+                "num": 25.9
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "20",
+                "num": 20.0
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "22,5",
+                "num": 22.5
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "20",
+                "num": 20.0
+              }
+            ]
+          },
+          {
+            "name": "Hemoglobina Corpuscular Média",
+            "name_lines": [
+              "Hemoglobina",
+              "Corpuscular Média"
+            ],
+            "reference": "27,7 a 32,7 pg",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "28,4",
+                "num": 28.4
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "28,2",
+                "num": 28.2
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "27,7",
+                "num": 27.7
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "27,5",
+                "num": 27.5
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "28,3",
+                "num": 28.3
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "27,3",
+                "num": 27.3
+              }
+            ]
+          },
+          {
+            "name": "Concentração de Hemoglobina Corpuscular",
+            "name_lines": [
+              "Concentração de",
+              "Hemoglobina",
+              "Corpuscular"
+            ],
+            "reference": "32,4 a 36,0 g/dL",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "35,9",
+                "num": 35.9
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "35,5",
+                "num": 35.5
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "35,1",
+                "num": 35.1
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "33,5",
+                "num": 33.5
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "35,1",
+                "num": 35.1
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "33",
+                "num": 33.0
+              }
+            ]
+          },
+          {
+            "name": "VCM",
+            "name_lines": [
+              "VCM"
+            ],
+            "reference": "81,7 a 95,3 fL",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "79,2",
+                "num": 79.2
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "79,4",
+                "num": 79.4
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "78,7",
+                "num": 78.7
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "82",
+                "num": 82.0
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "80,6",
+                "num": 80.6
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "82,6",
+                "num": 82.6
+              }
+            ]
+          },
+          {
+            "name": "RDW",
+            "name_lines": [
+              "RDW"
+            ],
+            "reference": "11,8 a 14,1 %",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "16,5",
+                "num": 16.5
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "15,7",
+                "num": 15.7
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "15,4",
+                "num": 15.4
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "16,2",
+                "num": 16.2
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "15,9",
+                "num": 15.9
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "15,6",
+                "num": 15.6
+              }
+            ]
+          },
+          {
+            "name": "Leucócitos",
+            "name_lines": [
+              "Leucócitos"
+            ],
+            "reference": "3.650 a 8.120 /mm3",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "15470",
+                "num": 15470.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "43890",
+                "num": 43890.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "17360",
+                "num": 17360.0
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "9680",
+                "num": 9680.0
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "5770",
+                "num": 5770.0
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "4330",
+                "num": 4330.0
+              }
+            ]
+          },
+          {
+            "name": "Neutrófilos",
+            "name_lines": [
+              "Neutrófilos"
+            ],
+            "reference": "1.590 a 4.770 /mm3",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "11860",
+                "num": 11860.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "30380",
+                "num": 30380.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "10160",
+                "num": 10160.0
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "3070",
+                "num": 3070.0
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "1110",
+                "num": 1110.0
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "630",
+                "num": 630.0
+              }
+            ]
+          },
+          {
+            "name": "Neutrófilos (%)",
+            "name_lines": [
+              "Neutrófilos (%)"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "76,7",
+                "num": 76.7
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "69,2",
+                "num": 69.2
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "58,5",
+                "num": 58.5
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "31,7",
+                "num": 31.7
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "19,3",
+                "num": 19.3
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "14,5",
+                "num": 14.5
+              }
+            ]
+          },
+          {
+            "name": "Mielócitos",
+            "name_lines": [
+              "Mielócitos"
+            ],
+            "reference": "0 /mm3",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "620",
+                "num": 620.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "1320",
+                "num": 1320.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "870",
+                "num": 870.0
+              },
+              {
+                "datetime": "2026-05-10T06:36",
+                "raw": "10/05/26 06:36",
+                "value": "60",
+                "num": 60.0
+              },
+              {
+                "datetime": "2026-05-07T21:37",
+                "raw": "07/05/26 21:37",
+                "value": "60",
+                "num": 60.0
+              },
+              {
+                "datetime": "2026-05-06T21:42",
+                "raw": "06/05/26 21:42",
+                "value": "60",
+                "num": 60.0
+              }
+            ]
+          },
+          {
+            "name": "Mielócitos (%)",
+            "name_lines": [
+              "Mielócitos (%)"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "4",
+                "num": 4.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "3",
+                "num": 3.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "5",
+                "num": 5.0
+              },
+              {
+                "datetime": "2026-05-10T06:36",
+                "raw": "10/05/26 06:36",
+                "value": "1",
+                "num": 1.0
+              },
+              {
+                "datetime": "2026-05-07T21:37",
+                "raw": "07/05/26 21:37",
+                "value": "1",
+                "num": 1.0
+              },
+              {
+                "datetime": "2026-05-06T21:42",
+                "raw": "06/05/26 21:42",
+                "value": "1",
+                "num": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Metamielócitos",
+            "name_lines": [
+              "Metamielócitos"
+            ],
+            "reference": "0 /mm3",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "770",
+                "num": 770.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "1320",
+                "num": 1320.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "870",
+                "num": 870.0
+              },
+              {
+                "datetime": "2026-05-10T06:36",
+                "raw": "10/05/26 06:36",
+                "value": "110",
+                "num": 110.0
+              },
+              {
+                "datetime": "2026-05-09T05:58",
+                "raw": "09/05/26 05:58",
+                "value": "60",
+                "num": 60.0
+              },
+              {
+                "datetime": "2026-05-07T21:37",
+                "raw": "07/05/26 21:37",
+                "value": "60",
+                "num": 60.0
+              }
+            ]
+          },
+          {
+            "name": "Metamielócitos (%)",
+            "name_lines": [
+              "Metamielócitos (%)"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "5",
+                "num": 5.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "3",
+                "num": 3.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "5",
+                "num": 5.0
+              },
+              {
+                "datetime": "2026-05-10T06:36",
+                "raw": "10/05/26 06:36",
+                "value": "2",
+                "num": 2.0
+              },
+              {
+                "datetime": "2026-05-09T05:58",
+                "raw": "09/05/26 05:58",
+                "value": "1",
+                "num": 1.0
+              },
+              {
+                "datetime": "2026-05-07T21:37",
+                "raw": "07/05/26 21:37",
+                "value": "1",
+                "num": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Bastonetes",
+            "name_lines": [
+              "Bastonetes"
+            ],
+            "reference": "Até 812 /mm3",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "930",
+                "num": 930.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "2190",
+                "num": 2190.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "1220",
+                "num": 1220.0
+              },
+              {
+                "datetime": "2026-05-10T06:36",
+                "raw": "10/05/26 06:36",
+                "value": "110",
+                "num": 110.0
+              },
+              {
+                "datetime": "2026-05-09T05:58",
+                "raw": "09/05/26 05:58",
+                "value": "120",
+                "num": 120.0
+              },
+              {
+                "datetime": "2026-05-07T21:37",
+                "raw": "07/05/26 21:37",
+                "value": "120",
+                "num": 120.0
+              }
+            ]
+          },
+          {
+            "name": "Bastonetes (%)",
+            "name_lines": [
+              "Bastonetes (%)"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "6",
+                "num": 6.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "5",
+                "num": 5.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "7",
+                "num": 7.0
+              },
+              {
+                "datetime": "2026-05-10T06:36",
+                "raw": "10/05/26 06:36",
+                "value": "2",
+                "num": 2.0
+              },
+              {
+                "datetime": "2026-05-09T05:58",
+                "raw": "09/05/26 05:58",
+                "value": "2",
+                "num": 2.0
+              },
+              {
+                "datetime": "2026-05-07T21:37",
+                "raw": "07/05/26 21:37",
+                "value": "2",
+                "num": 2.0
+              }
+            ]
+          },
+          {
+            "name": "Segmentados",
+            "name_lines": [
+              "Segmentados"
+            ],
+            "reference": "1.590 a 4.770 /mm3",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "9540",
+                "num": 9540.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "25110",
+                "num": 25110.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "7030",
+                "num": 7030.0
+              },
+              {
+                "datetime": "2026-05-10T06:36",
+                "raw": "10/05/26 06:36",
+                "value": "1130",
+                "num": 1130.0
+              },
+              {
+                "datetime": "2026-05-09T05:58",
+                "raw": "09/05/26 05:58",
+                "value": "1370",
+                "num": 1370.0
+              },
+              {
+                "datetime": "2026-05-07T21:37",
+                "raw": "07/05/26 21:37",
+                "value": "1080",
+                "num": 1080.0
+              }
+            ]
+          },
+          {
+            "name": "Segmentados (%)",
+            "name_lines": [
+              "Segmentados (%)"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "61,7",
+                "num": 61.7
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "57,2",
+                "num": 57.2
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "40,5",
+                "num": 40.5
+              },
+              {
+                "datetime": "2026-05-10T06:36",
+                "raw": "10/05/26 06:36",
+                "value": "20,2",
+                "num": 20.2
+              },
+              {
+                "datetime": "2026-05-09T05:58",
+                "raw": "09/05/26 05:58",
+                "value": "22,2",
+                "num": 22.2
+              },
+              {
+                "datetime": "2026-05-07T21:37",
+                "raw": "07/05/26 21:37",
+                "value": "18,5",
+                "num": 18.5
+              }
+            ]
+          },
+          {
+            "name": "Eosinófilos",
+            "name_lines": [
+              "Eosinófilos"
+            ],
+            "reference": "34 a 420 /mm3",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "150",
+                "num": 150.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "40",
+                "num": 40.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "50",
+                "num": 50.0
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "390",
+                "num": 390.0
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "100",
+                "num": 100.0
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "110",
+                "num": 110.0
+              }
+            ]
+          },
+          {
+            "name": "Eosinófilos (%)",
+            "name_lines": [
+              "Eosinófilos (%)"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "1",
+                "num": 1.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": ",1",
+                "num": 0.1
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": ",3",
+                "num": 0.3
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "4",
+                "num": 4.0
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "1,7",
+                "num": 1.7
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "2,6",
+                "num": 2.6
+              }
+            ]
+          },
+          {
+            "name": "Basófilos",
+            "name_lines": [
+              "Basófilos"
+            ],
+            "reference": "10 a 80 /mm3",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "50",
+                "num": 50.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "90",
+                "num": 90.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "30",
+                "num": 30.0
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "60",
+                "num": 60.0
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "20",
+                "num": 20.0
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "410",
+                "num": 410.0
+              }
+            ]
+          },
+          {
+            "name": "Basófilos (%)",
+            "name_lines": [
+              "Basófilos (%)"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": ",3",
+                "num": 0.3
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": ",2",
+                "num": 0.2
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": ",2",
+                "num": 0.2
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": ",6",
+                "num": 0.6
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": ",3",
+                "num": 0.3
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "9,5",
+                "num": 9.5
+              }
+            ]
+          },
+          {
+            "name": "Linfócitos",
+            "name_lines": [
+              "Linfócitos"
+            ],
+            "reference": "1.120 a 2.950 /mm3",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "770",
+                "num": 770.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "3030",
+                "num": 3030.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "1740",
+                "num": 1740.0
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "4550",
+                "num": 4550.0
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "3350",
+                "num": 3350.0
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "2570",
+                "num": 2570.0
+              }
+            ]
+          },
+          {
+            "name": "Linfócitos (%)",
+            "name_lines": [
+              "Linfócitos (%)"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "5",
+                "num": 5.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "6,9",
+                "num": 6.9
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "10",
+                "num": 10.0
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "47",
+                "num": 47.0
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "58,1",
+                "num": 58.1
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "59,4",
+                "num": 59.4
+              }
+            ]
+          },
+          {
+            "name": "Monócitos",
+            "name_lines": [
+              "Monócitos"
+            ],
+            "reference": "260 a 730 /mm3",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "2630",
+                "num": 2630.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "10360",
+                "num": 10360.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "5380",
+                "num": 5380.0
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "1620",
+                "num": 1620.0
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "1190",
+                "num": 1190.0
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "560",
+                "num": 560.0
+              }
+            ]
+          },
+          {
+            "name": "Monócitos (%)",
+            "name_lines": [
+              "Monócitos (%)"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "17",
+                "num": 17.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "23,6",
+                "num": 23.6
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "31",
+                "num": 31.0
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "16,7",
+                "num": 16.7
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "20,6",
+                "num": 20.6
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "13",
+                "num": 13.0
+              }
+            ]
+          },
+          {
+            "name": "Plaquetas",
+            "name_lines": [
+              "Plaquetas"
+            ],
+            "reference": "151.000 a 304.000 /mm3",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "35000",
+                "num": 35000.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "50000",
+                "num": 50000.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "48000",
+                "num": 48000.0
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "52000",
+                "num": 52000.0
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "52000",
+                "num": 52000.0
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "44000",
+                "num": 44000.0
+              }
+            ]
+          },
+          {
+            "name": "Volume plaquetário médio",
+            "name_lines": [
+              "Volume plaquetário",
+              "médio"
+            ],
+            "reference": "9,2 a 12,6 fL",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "11,2",
+                "num": 11.2
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "11,4",
+                "num": 11.4
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "11,9",
+                "num": 11.9
+              },
+              {
+                "datetime": "2026-07-17T13:51",
+                "raw": "17/07/26 13:51",
+                "value": "12,2",
+                "num": 12.2
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "12,3",
+                "num": 12.3
+              },
+              {
+                "datetime": "2026-05-06T21:42",
+                "raw": "06/05/26 21:42",
+                "value": "11,4",
+                "num": 11.4
+              }
+            ]
+          },
+          {
+            "name": "Fração Imatura de Plaquetas",
+            "name_lines": [
+              "Fração Imatura de",
+              "Plaquetas"
+            ],
+            "reference": "1,1 a 6,8 %",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:45",
+                "raw": "02/08/26 22:45",
+                "value": "12,2",
+                "num": 12.2
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "14,6",
+                "num": 14.6
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "12,2",
+                "num": 12.2
+              },
+              {
+                "datetime": "2026-07-27T20:07",
+                "raw": "27/07/26 20:07",
+                "value": "13,4",
+                "num": 13.4
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "12,3",
+                "num": 12.3
+              },
+              {
+                "datetime": "2026-05-23T10:15",
+                "raw": "23/05/26 10:15",
+                "value": "14",
+                "num": 14.0
+              }
+            ]
+          },
+          {
+            "name": "Promielócitos",
+            "name_lines": [
+              "Promielócitos"
+            ],
+            "reference": "0 /mm3",
+            "points": [
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "440",
+                "num": 440.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "170",
+                "num": 170.0
+              }
+            ]
+          },
+          {
+            "name": "[*] [*] [*] [*] Promielócitos (%)",
+            "name_lines": [
+              "[*]",
+              "[*]",
+              "[*]",
+              "[*]",
+              "Promielócitos (%)"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "1",
+                "num": 1.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "1",
+                "num": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621460",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "FÓSFORO INORGÂNICO, plasma",
+      "pages": [
+        23,
+        24
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "02/08/2026 22:22:45",
+          "title": "FÓSFORO INORGÂNICO, plasma",
+          "title_lines": [
+            "FÓSFORO INORGÂNICO, plasma"
+          ],
+          "method": "Fotométrico, com leitura em faixa de ultra-violeta"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:22:45",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:22:45"
+        },
+        {
+          "name": null,
+          "value": "3,6 mg/dL",
+          "reference": "Acima de 13 anos e adultos: 2,5 a 4,5 mg/dL",
+          "line": "3,6 mg/dL                Acima de 13 anos e adultos: 2,5 a 4,5 mg/dL"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:17h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "FÓSFORO INORGÂNICO, plasma\nData da coleta: 02/08/2026 22:22:45\nFÓSFORO INORGÂNICO, plasma\nMétodo: Fotométrico, com leitura em faixa de ultra-violeta\nRESULTADO                VALOR DE REFERÊNCIA\n3,6 mg/dL                Acima de 13 anos e adultos: 2,5 a 4,5 mg/dL",
+      "evolution": {
+        "title": "Fósforo, plasma Fósforo",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Fósforo, plasma",
+              "Fósforo"
+            ],
+            "reference": "2,5 a 4,5 mg/dL",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:22",
+                "raw": "02/08/26 22:22",
+                "value": "3,6",
+                "num": 3.6
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "3,8",
+                "num": 3.8
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "5,8",
+                "num": 5.8
+              },
+              {
+                "datetime": "2026-06-08T17:25",
+                "raw": "08/06/26 17:25",
+                "value": "5,5",
+                "num": 5.5
+              },
+              {
+                "datetime": "2026-05-15T19:44",
+                "raw": "15/05/26 19:44",
+                "value": "6",
+                "num": 6.0
+              },
+              {
+                "datetime": "2026-05-09T05:58",
+                "raw": "09/05/26 05:58",
+                "value": "4,1",
+                "num": 4.1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621460",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "CREATININA, plasma",
+      "pages": [
+        25,
+        26,
+        27
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "02/08/2026 22:18:16",
+          "title": "CREATININA, plasma",
+          "title_lines": [
+            "CREATININA, plasma"
+          ],
+          "method": "Cinético colorimétrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:18:16",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:18:16"
+        },
+        {
+          "name": null,
+          "value": "5,55 mg/dL",
+          "reference": "Acima de 12 anos: 0,70 a 1,30",
+          "line": "5,55 mg/dL                          Acima de 12 anos: 0,70 a 1,30"
+        },
+        {
+          "name": "Indivíduo afrodescendente",
+          "value": "10",
+          "reference": "superior a 60",
+          "line": "Indivíduo afrodescendente    : 10                   superior a 60"
+        },
+        {
+          "name": "Indivíduo não afrodescendente",
+          "value": "9",
+          "reference": "superior a 60",
+          "line": "Indivíduo não afrodescendente: 9                    superior a 60"
+        },
+        {
+          "name": "CKD-EPI 2021",
+          "value": "9",
+          "reference": "superior a 60",
+          "line": "CKD-EPI 2021                 : 9                    superior a 60"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:17h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "CREATININA, plasma\nData da coleta: 02/08/2026 22:18:16\nCREATININA, plasma\nMétodo: Cinético colorimétrico\nRESULTADO                          VALOR DE REFERÊNCIA\n5,55 mg/dL                          Acima de 12 anos: 0,70 a 1,30\nESTIMATIVA DA FILTRAÇÃO GLOMERULAR      =================================\nMétodo: Cálculo da estimativa da taxa de filtração glomerular baseado\nnas equações CKD-EPI 2009, CKD-EPI 2021 e MDRD.\nRESULTADO            VALOR DE REFERÊNCIA\nmL/min/1,73 m2       mL/min/1,73 m2\nCKD-EPI 2009\nIndivíduo afrodescendente    : 10                   superior a 60\nIndivíduo não afrodescendente: 9                    superior a 60\nCKD-EPI 2021                 : 9                    superior a 60\nNOTA 1: O  resultado  descrito  se  refere  a  uma estimativa da taxa de\nfiltração  glomerular  obtida  por  meio  de  cálculo. Caso haja\ndiscordância  entre  o resultado e o quadro clínico do paciente,\nsugere-se  a  determinação  da taxa de filtração glomerular pelo\nmétodo padrão através da coleta de urina de 24 horas.\nNOTA 2: A  estimativa  da  taxa  de filtração glomerular pode apresentar\nflutuações  em  função  da  variação  biológica  do  nível  de\ncreatinina  no  sangue, inclusive decorrente do tipo de dieta ou\nuso  de medicamentos. O cálculo não é aplicável em pacientes com\ncreatinina  sérica  instável, na insuficiência renal aguda e nos\nportadores de massa muscular elevada ou muito baixa.\nNOTA 3: Para  as  equações  CKD-EPI  2009  e  MDRD são apresentados dois\nresultados,  levando-se  em  consideração as diferenças étnicas,\nconforme  indicado  em  literatura  médica.  O  valor  a  ser\nconsiderado é aquele que corresponde a etnia do paciente.\nNOTA 4: O resultado obtido pela equação CKD-EPI 2021 é único e\naplicável para todas as etnias.\nReferências:\nLevey AS et al. A new equation to estimate glomerular filtration rate.\nAnn Intern Med. 2009; 150:604-612.\nLevey AS et al. New creatinine and cystatin C based equations to\nestimate GFR without race. N Engl J Med 2021; 385:1737-1749.",
+      "evolution": {
+        "title": "Creatinina, plasma Cálculo CKD-EPI 2021",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Creatinina, plasma",
+              "Cálculo CKD-EPI",
+              "2021"
+            ],
+            "reference": "Superior a 60",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:18",
+                "raw": "02/08/26 22:18",
+                "value": "9",
+                "num": 9.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "11",
+                "num": 11.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "12",
+                "num": 12.0
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "9",
+                "num": 9.0
+              },
+              {
+                "datetime": "2026-06-08T17:25",
+                "raw": "08/06/26 17:25",
+                "value": "9",
+                "num": 9.0
+              },
+              {
+                "datetime": "2026-05-15T19:44",
+                "raw": "15/05/26 19:44",
+                "value": "9",
+                "num": 9.0
+              }
+            ]
+          },
+          {
+            "name": "Cálculo p/não afrodescendente CKD-EPI",
+            "name_lines": [
+              "Cálculo p/não",
+              "afrodescendente",
+              "CKD-EPI"
+            ],
+            "reference": "Superior a 60",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:18",
+                "raw": "02/08/26 22:18",
+                "value": "9",
+                "num": 9.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "10",
+                "num": 10.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "11",
+                "num": 11.0
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "8",
+                "num": 8.0
+              },
+              {
+                "datetime": "2026-06-08T17:25",
+                "raw": "08/06/26 17:25",
+                "value": "8",
+                "num": 8.0
+              },
+              {
+                "datetime": "2026-05-15T19:44",
+                "raw": "15/05/26 19:44",
+                "value": "8",
+                "num": 8.0
+              }
+            ]
+          },
+          {
+            "name": "Cálculo p/afrodescendente CKD-EPI",
+            "name_lines": [
+              "Cálculo",
+              "p/afrodescendente",
+              "CKD-EPI"
+            ],
+            "reference": "Superior a 60",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:18",
+                "raw": "02/08/26 22:18",
+                "value": "10",
+                "num": 10.0
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "12",
+                "num": 12.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "12",
+                "num": 12.0
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "9",
+                "num": 9.0
+              },
+              {
+                "datetime": "2026-06-08T17:25",
+                "raw": "08/06/26 17:25",
+                "value": "9",
+                "num": 9.0
+              },
+              {
+                "datetime": "2026-05-15T19:44",
+                "raw": "15/05/26 19:44",
+                "value": "10",
+                "num": 10.0
+              }
+            ]
+          },
+          {
+            "name": "Creatinina",
+            "name_lines": [
+              "Creatinina"
+            ],
+            "reference": "0,70 a 1,30 mg/dL",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:18",
+                "raw": "02/08/26 22:18",
+                "value": "5,55",
+                "num": 5.55
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "4,77",
+                "num": 4.77
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "4,61",
+                "num": 4.61
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "5,83",
+                "num": 5.83
+              },
+              {
+                "datetime": "2026-06-08T17:25",
+                "raw": "08/06/26 17:25",
+                "value": "5,97",
+                "num": 5.97
+              },
+              {
+                "datetime": "2026-05-15T19:44",
+                "raw": "15/05/26 19:44",
+                "value": "5,68",
+                "num": 5.68
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621460",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "CÁLCIO IONIZADO, sangue venoso",
+      "pages": [
+        28,
+        29
+      ],
+      "blocks": [
+        {
+          "material": "Sangue Venoso",
+          "coleta": "02/08/2026 22:04:48",
+          "title": "CÁLCIO IONIZADO, sangue venoso",
+          "title_lines": [
+            "CÁLCIO IONIZADO, sangue venoso"
+          ],
+          "method": "Potenciométrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:04:48",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:04:48"
+        },
+        {
+          "name": null,
+          "value": "1,18 mmol/L",
+          "reference": "1,11 a 1,40 mmol/L",
+          "line": "1,18 mmol/L                       1,11 a 1,40 mmol/L"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:01h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "CÁLCIO IONIZADO, sangue venoso\nData da coleta: 02/08/2026 22:04:48\nCÁLCIO IONIZADO, sangue venoso\nMétodo: Potenciométrico\n1,18 mmol/L                       1,11 a 1,40 mmol/L",
+      "evolution": {
+        "title": "Calcio iônico, sangue total venoso Cálcio Ionizado, sangue",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Calcio iônico, sangue total venoso",
+              "Cálcio Ionizado,",
+              "sangue"
+            ],
+            "reference": "1,11 a 1,40 mmol/L",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:04",
+                "raw": "02/08/26 22:04",
+                "value": "1,18",
+                "num": 1.18
+              },
+              {
+                "datetime": "2026-08-01T20:48",
+                "raw": "01/08/26 20:48",
+                "value": "1,23",
+                "num": 1.23
+              },
+              {
+                "datetime": "2026-05-09T05:58",
+                "raw": "09/05/26 05:58",
+                "value": "1,16",
+                "num": 1.16
+              },
+              {
+                "datetime": "2026-05-07T21:37",
+                "raw": "07/05/26 21:37",
+                "value": "1,14",
+                "num": 1.14
+              },
+              {
+                "datetime": "2026-05-06T21:42",
+                "raw": "06/05/26 21:42",
+                "value": "1,15",
+                "num": 1.15
+              },
+              {
+                "datetime": "2026-05-05T20:44",
+                "raw": "05/05/26 20:44",
+                "value": "1,03",
+                "num": 1.03
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621518",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "TRANSAMINASE GLUTAMICO-PIRUVICA (TGP)",
+      "pages": [
+        30,
+        31
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "02/08/2026 22:22:46",
+          "title": "TRANSAMINASE GLUTAMICO-PIRUVICA (TGP)",
+          "title_lines": [
+            "TRANSAMINASE GLUTAMICO-PIRUVICA (TGP)",
+            "ALANINA AMINO TRANSFERASE (ALT), Atividade no plasma"
+          ],
+          "method": "Cinético, UV"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:22:46",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:22:46"
+        },
+        {
+          "name": null,
+          "value": "394 U/L",
+          "reference": "maior que 1 ano: até 41 U/L",
+          "line": "394 U/L                            maior que 1 ano: até 41 U/L"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:18h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "TRANSAMINASE GLUTAMICO-PIRUVICA (TGP)\nALANINA AMINO TRANSFERASE (ALT), Atividade no plasma\nData da coleta: 02/08/2026 22:22:46\nTRANSAMINASE GLUTAMICO-PIRUVICA (TGP)\nALANINA AMINO TRANSFERASE (ALT), Atividade no plasma\nMétodo: Cinético, UV\n394 U/L                            maior que 1 ano: até 41 U/L",
+      "evolution": {
+        "title": "Transaminase Glutâmico Pirúvica ALT (TGP)",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Transaminase Glutâmico Pirúvica",
+              "ALT (TGP)"
+            ],
+            "reference": "Até 41 U/L",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:22",
+                "raw": "02/08/26 22:22",
+                "value": "394",
+                "num": 394.0
+              },
+              {
+                "datetime": "2026-08-01T09:36",
+                "raw": "01/08/26 09:36",
+                "value": "882",
+                "num": 882.0
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "19",
+                "num": 19.0
+              },
+              {
+                "datetime": "2026-06-08T17:25",
+                "raw": "08/06/26 17:25",
+                "value": "22",
+                "num": 22.0
+              },
+              {
+                "datetime": "2026-05-15T19:44",
+                "raw": "15/05/26 19:44",
+                "value": "24",
+                "num": 24.0
+              },
+              {
+                "datetime": "2026-05-01T20:02",
+                "raw": "01/05/26 20:02",
+                "value": "173",
+                "num": 173.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621518",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "GAMA GLUTAMIL TRANSFERASE (GAMA-GT), plasma",
+      "pages": [
+        32,
+        33
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "02/08/2026 22:22:45",
+          "title": "GAMA GLUTAMIL TRANSFERASE (GAMA-GT), plasma",
+          "title_lines": [
+            "GAMA GLUTAMIL TRANSFERASE (GAMA-GT), plasma"
+          ],
+          "method": "Cinético, colorimétrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:22:45",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:22:45"
+        },
+        {
+          "name": null,
+          "value": "138 U/L",
+          "reference": "Masculino: de 12 a 73 U/L",
+          "line": "138 U/L                            Masculino: de 12 a 73 U/L"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:18h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "GAMA GLUTAMIL TRANSFERASE (GAMA-GT), plasma\nData da coleta: 02/08/2026 22:22:45\nGAMA GLUTAMIL TRANSFERASE (GAMA-GT), plasma\nMétodo: Cinético, colorimétrico\nRESULTADO                          VALOR DE REFERÊNCIA\n138 U/L                            Masculino: de 12 a 73 U/L",
+      "evolution": {
+        "title": "Gama glutamiltransferase (gama GT), Gama-GT",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Gama glutamiltransferase (gama GT),",
+              "Gama-GT"
+            ],
+            "reference": "12 a 73 U/L",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:22",
+                "raw": "02/08/26 22:22",
+                "value": "138",
+                "num": 138.0
+              },
+              {
+                "datetime": "2026-04-30T09:28",
+                "raw": "30/04/26 09:28",
+                "value": "435",
+                "num": 435.0
+              },
+              {
+                "datetime": "2026-04-29T22:54",
+                "raw": "29/04/26 22:54",
+                "value": "465",
+                "num": 465.0
+              },
+              {
+                "datetime": "2024-12-15T10:23",
+                "raw": "15/12/24 10:23",
+                "value": "95",
+                "num": 95.0
+              },
+              {
+                "datetime": "2024-12-01T14:13",
+                "raw": "01/12/24 14:13",
+                "value": "53",
+                "num": 53.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621518",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "FOSFATASE ALCALINA (ALP), plasma",
+      "pages": [
+        34,
+        35
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "02/08/2026 22:22:45",
+          "title": "FOSFATASE ALCALINA (ALP), plasma",
+          "title_lines": [
+            "FOSFATASE ALCALINA (ALP), plasma"
+          ],
+          "method": "Cinético colorimétrico"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:22:45",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:22:45"
+        },
+        {
+          "name": "198 U/L                            Adultos",
+          "value": "40 a 129 U/L",
+          "reference": null,
+          "line": "198 U/L                            Adultos: 40 a 129 U/L"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:18h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "FOSFATASE ALCALINA (ALP), plasma\nData da coleta: 02/08/2026 22:22:45\nFOSFATASE ALCALINA (ALP), plasma\nMétodo: Cinético colorimétrico\n198 U/L                            Adultos: 40 a 129 U/L",
+      "evolution": {
+        "title": "Fosfatase alcalina, plasma Fosfatase Alcalina 40 - 129 U/L",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Fosfatase alcalina, plasma",
+              "Fosfatase Alcalina",
+              "40 - 129 U/L"
+            ],
+            "reference": null,
+            "points": [
+              {
+                "datetime": "2026-08-02T22:22",
+                "raw": "02/08/26 22:22",
+                "value": "198",
+                "num": 198.0
+              },
+              {
+                "datetime": "2026-07-10T19:51",
+                "raw": "10/07/26 19:51",
+                "value": "84",
+                "num": 84.0
+              },
+              {
+                "datetime": "2026-04-30T09:28",
+                "raw": "30/04/26 09:28",
+                "value": "350",
+                "num": 350.0
+              },
+              {
+                "datetime": "2026-04-02T16:44",
+                "raw": "02/04/26 16:44",
+                "value": "73",
+                "num": 73.0
+              },
+              {
+                "datetime": "2026-01-09T17:00",
+                "raw": "09/01/26 17:00",
+                "value": "95",
+                "num": 95.0
+              },
+              {
+                "datetime": "2025-10-02T13:03",
+                "raw": "02/10/25 13:03",
+                "value": "83",
+                "num": 83.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "lab",
+      "setor": "Internado",
+      "ficha": "4580621518",
+      "atendimento": "20941147",
+      "data": "02/08/2026",
+      "medico": "",
+      "nasc": "14/10/1940",
+      "title": "TRANSAMINASE GLUTAMICO-OXALACETICA (TGO)",
+      "pages": [
+        36,
+        37
+      ],
+      "blocks": [
+        {
+          "material": "Plasma",
+          "coleta": "02/08/2026 22:22:45",
+          "title": "TRANSAMINASE GLUTAMICO-OXALACETICA (TGO)",
+          "title_lines": [
+            "TRANSAMINASE GLUTAMICO-OXALACETICA (TGO)",
+            "ASPARTATO AMINO TRANSFERASE (AST), Atividade no plasma"
+          ],
+          "method": "Cinético, UV"
+        }
+      ],
+      "measures": [
+        {
+          "name": "Data da coleta",
+          "value": "02/08/2026 22:22:45",
+          "reference": null,
+          "line": "Data da coleta: 02/08/2026 22:22:45"
+        },
+        {
+          "name": null,
+          "value": "249 U/L",
+          "reference": "maior que 2 anos: até 40 U/L",
+          "line": "249 U/L                            maior que 2 anos: até 40 U/L"
+        }
+      ],
+      "recebido": [
+        "Recebido em: 02/08/2026 às 21:46h - Liberado em: 02/08/2026 às 22:18h"
+      ],
+      "responsavel": [
+        "RESPONSÁVEL: DR NAIRO MASSAKAZU SUMITA - CRM 61649SP"
+      ],
+      "result_text": "TRANSAMINASE GLUTAMICO-OXALACETICA (TGO)\nASPARTATO AMINO TRANSFERASE (AST), Atividade no plasma\nData da coleta: 02/08/2026 22:22:45\nTRANSAMINASE GLUTAMICO-OXALACETICA (TGO)\nASPARTATO AMINO TRANSFERASE (AST), Atividade no plasma\nMétodo: Cinético, UV\n249 U/L                            maior que 2 anos: até 40 U/L",
+      "evolution": {
+        "title": "Aspartato Aminotransferase AST (TGO)",
+        "series": [
+          {
+            "name": "",
+            "name_lines": [
+              "Aspartato Aminotransferase",
+              "AST (TGO)"
+            ],
+            "reference": "Até 40 U/L",
+            "points": [
+              {
+                "datetime": "2026-08-02T22:22",
+                "raw": "02/08/26 22:22",
+                "value": "249",
+                "num": 249.0
+              },
+              {
+                "datetime": "2026-08-01T09:37",
+                "raw": "01/08/26 09:37",
+                "value": "1406",
+                "num": 1406.0
+              },
+              {
+                "datetime": "2026-05-01T20:02",
+                "raw": "01/05/26 20:02",
+                "value": "135",
+                "num": 135.0
+              },
+              {
+                "datetime": "2026-04-30T09:28",
+                "raw": "30/04/26 09:28",
+                "value": "390",
+                "num": 390.0
+              },
+              {
+                "datetime": "2026-04-29T13:12",
+                "raw": "29/04/26 13:12",
+                "value": "443",
+                "num": 443.0
+              },
+              {
+                "datetime": "2025-08-18T17:47",
+                "raw": "18/08/25 17:47",
+                "value": "24",
+                "num": 24.0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
